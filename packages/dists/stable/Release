@@ -1,0 +1,24 @@
+Origin: Buendia
+Label: Buendia Debian Packages
+Suite: stable
+Codename: stable
+Architectures: all
+Components: main
+Description: Buendia Debian Packages
+Date: Fri, 18 Mar 2016 12:38:38 UTC
+MD5Sum:
+ 19137c1cf78990dbe532b1d6f32c0a12              151 Release
+ 06cfb0e23309751a1f6f144dac8a39c4            15420 main/binary-all/Packages
+ 06cfb0e23309751a1f6f144dac8a39c4            15420 main/binary-i386/Packages
+SHA1:
+ aaa2b00b521782de97e8fa7e4e5dac06b158d931              151 Release
+ 7f21133a631bd6ac76ffb653448f1a005fad3912            15420 main/binary-all/Packages
+ 7f21133a631bd6ac76ffb653448f1a005fad3912            15420 main/binary-i386/Packages
+SHA256:
+ 150c30e9a7bf6c8d597b61881cbf06ccda7b6cd1c6f9d90f8ed77d903bae7f79              151 Release
+ be29f5bedfefaefa2fc0336de124c4797e9ec8249cbfb75bd33dcc18c107b87d            15420 main/binary-all/Packages
+ be29f5bedfefaefa2fc0336de124c4797e9ec8249cbfb75bd33dcc18c107b87d            15420 main/binary-i386/Packages
+SHA512:
+ 176f86fb59d8dd41c61a715c0f4ca5f19b24249923b9a121c1a6e4bc5c238434bb9d796f13b632204d41243483c2a911f7d64be7f8c7289f20c61030d943c9dc              151 Release
+ a918986c060e8e6286214b9539c160fcd53b24467523ff54d0074a73ab1a41417a4b4a6b4784f45722dc70ce00c80cb9114df25250b00f0375adc7a2ff72ee23            15420 main/binary-all/Packages
+ a918986c060e8e6286214b9539c160fcd53b24467523ff54d0074a73ab1a41417a4b4a6b4784f45722dc70ce00c80cb9114df25250b00f0375adc7a2ff72ee23            15420 main/binary-i386/Packages
