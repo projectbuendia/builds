@@ -5,20 +5,20 @@ Codename: stable
 Architectures: all
 Components: main
 Description: Buendia Debian Packages
-Date: Sat, 18 Jun 2016 13:22:10 UTC
+Date: Sat, 18 Jun 2016 14:01:14 UTC
 MD5Sum:
  19137c1cf78990dbe532b1d6f32c0a12              151 Release
- 217e2b95643bd6ddf65dfbf44b588ecf            30840 main/binary-all/Packages
- 217e2b95643bd6ddf65dfbf44b588ecf            30840 main/binary-i386/Packages
+ dd68e03d9c5c77002e2d242bfa79021c            46260 main/binary-all/Packages
+ dd68e03d9c5c77002e2d242bfa79021c            46260 main/binary-i386/Packages
 SHA1:
  aaa2b00b521782de97e8fa7e4e5dac06b158d931              151 Release
- 8154ef15f6da5000c5de48ab80cef68e775433e9            30840 main/binary-all/Packages
- 8154ef15f6da5000c5de48ab80cef68e775433e9            30840 main/binary-i386/Packages
+ b785b95e89ad3533f1c9fd095acc563ac80fe39b            46260 main/binary-all/Packages
+ b785b95e89ad3533f1c9fd095acc563ac80fe39b            46260 main/binary-i386/Packages
 SHA256:
  150c30e9a7bf6c8d597b61881cbf06ccda7b6cd1c6f9d90f8ed77d903bae7f79              151 Release
- 8c3529064fd7910ff385e473b77f67076866223ad15df138fea3b2fdd7b8f3cd            30840 main/binary-all/Packages
- 8c3529064fd7910ff385e473b77f67076866223ad15df138fea3b2fdd7b8f3cd            30840 main/binary-i386/Packages
+ 1b7f554eb31b0dfdfc69422bea8931c17ce5faab7a812a852afb0a2c0dc65bc4            46260 main/binary-all/Packages
+ 1b7f554eb31b0dfdfc69422bea8931c17ce5faab7a812a852afb0a2c0dc65bc4            46260 main/binary-i386/Packages
 SHA512:
  176f86fb59d8dd41c61a715c0f4ca5f19b24249923b9a121c1a6e4bc5c238434bb9d796f13b632204d41243483c2a911f7d64be7f8c7289f20c61030d943c9dc              151 Release
- a2adb6952d793368e6d0cb17e039b0d7727f2bef3d5eb58302e0cbf201093a7a096da23ab475abc5472fec5d904309b7156b302073a6a018e574d5fa32168e79            30840 main/binary-all/Packages
- a2adb6952d793368e6d0cb17e039b0d7727f2bef3d5eb58302e0cbf201093a7a096da23ab475abc5472fec5d904309b7156b302073a6a018e574d5fa32168e79            30840 main/binary-i386/Packages
+ 889931f3e8adad2b996aa4033405b6aba4e6f2681265c503d05bb04bd297c963cb113ffa325a5b7e941a2882af3eb3a4e5fa75f40618313f3845a36405af0022            46260 main/binary-all/Packages
+ 889931f3e8adad2b996aa4033405b6aba4e6f2681265c503d05bb04bd297c963cb113ffa325a5b7e941a2882af3eb3a4e5fa75f40618313f3845a36405af0022            46260 main/binary-i386/Packages
