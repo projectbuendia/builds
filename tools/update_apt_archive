@@ -1,0 +1,74 @@
+#!/bin/bash
+# Copyright 2019 The Project Buendia Authors
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License.  You may obtain a copy
+# of the License at: http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software distrib-
+# uted under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+# OR CONDITIONS OF ANY KIND, either express or implied.  See the License for
+# specific language governing permissions and limitations under the License.
+
+set -e
+
+if [ "$1" = "-h" -o -z "$1" -o -z "$2" -o -z "$CIRCLECI_API_TOKEN" ]; then
+    echo "Usage: $0 <repository-dir> <branch>"
+    echo
+    echo "Updates the apt archive in projectbuendia/builds with the latest"
+    echo "CircleCI build artifacts for a given branch of the"
+    echo "projectbuendia/buendia project."
+    echo
+    echo "<branch> can be either 'master' or 'dev'."
+    echo
+    echo "CIRCLECI_API_TOKEN must be set in the environment and"
+    echo "~/.gitconfig must be set up, or this script will fail."
+    exit 1
+fi
+
+repo=$1
+branch=$2
+tools=$(cd $(dirname $0) && pwd)
+project=projectbuendia/buendia
+
+if [ "$branch" = "master" ]; then
+    suite=stable
+elif [ "$branch" = "dev" ]; then
+    suite=unstable
+else
+    echo "Branch must be either 'master' or 'dev'!"
+    exit 1
+fi
+
+if [ ! -r ~/.gitconfig ]; then
+    echo "~/.gitconfig is missing; you need this to commit updates."
+    exit 1
+fi
+
+echo "- Fetching build artifacts for ${branch}"
+mkdir -p $repo/$suite
+cd $repo/$suite
+$tools/fetch_circleci_artifacts $project $branch '*.deb'
+
+echo
+echo "- De-duplicating packages in ${suite}"
+cd ..
+$tools/dedupdeb $suite
+
+echo
+echo "- Indexing packages in ${suite}"
+$tools/index_debs . $suite
+
+echo
+echo "- Committing changes to git"
+git add $suite
+git add dists/$suite
+if [ -n "$CI" ]; then
+    git commit -m "Automated update from CircleCI build #${CIRCLECI_BUILD_NUM}"
+else
+    git commit
+fi
+
+echo
+echo "- Pushing changes to Github"
+#git push --all
