@@ -24,6 +24,32 @@ Description: generic font configuration library - configuration
  .
  This package contains the configuration files and scripts for fontconfig.
 
+Package: libtomcat7-java
+Architecture: all
+Version: 7.0.56-3+deb8u11
+Priority: optional
+Section: java
+Source: tomcat7
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 4139
+Depends: libecj-java, libcommons-pool-java, libcommons-dbcp-java, libservlet3.0-java (>= 7.0.56-3+deb8u11)
+Suggests: tomcat7 (>= 7.0.56-3+deb8u11)
+Conflicts: libtomcat6-java
+Filename: java/libtomcat7-java_7.0.56-3+deb8u11_all.deb
+Size: 3633608
+MD5sum: c87d3519c9a67bab96386cee121ab417
+SHA1: bee90e719113503208526733525957ad36749df6
+SHA256: 9b43105fbbe9d881815c66a79ccd4feabe15f8dd90d691b78d52decf06d51733
+SHA512: 5aede1b2fe236af641fba5bcebb030f3e864126eedc5558585bdb0bea61b14db7bfbdce26caba3101a5d88531699778804ed9143999ab88fb4a22223510b2047
+Homepage: http://tomcat.apache.org
+Description: Servlet and JSP engine -- core libraries
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the Tomcat core classes which can be used by other
+ Java applications to embed Tomcat.
+
 Package: tomcat7-admin
 Architecture: all
 Version: 7.0.56-3+deb8u11
@@ -46,6 +72,30 @@ Description: Servlet and JSP engine -- admin web applications
  server environment for Java code to run.
  .
  This package contains the administrative web interfaces.
+
+Package: tomcat7-common
+Architecture: all
+Version: 7.0.56-3+deb8u11
+Priority: optional
+Section: java
+Source: tomcat7
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 142
+Depends: libtomcat7-java (>= 7.0.56-3+deb8u11), default-jre-headless | java6-runtime-headless | java6-runtime | java-6-runtime
+Filename: java/tomcat7-common_7.0.56-3+deb8u11_all.deb
+Size: 64496
+MD5sum: e623e1773c6ad78ca8cdb78a0a0fb57d
+SHA1: c01869d335c98cf6f03c6aa7e0b45b41baed98a1
+SHA256: 7cbdba90cb90b53de06dbf4fa4a3faa2db26c0eb043023c1bed19ba19eeddb06
+SHA512: bd1a3cee2a6eb72b6fe1b206b0bf820ae38447cbb772a46e48fd62f4c7f68760a60d1202804a0915f6fa317b04d2e1e0061f1debe953d1d93590518c1ca98ba2
+Homepage: http://tomcat.apache.org
+Description: Servlet and JSP engine -- common files
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains common files needed by the tomcat7 and tomcat7-user
+ packages (Tomcat 6 scripts and libraries).
 
 Package: tomcat7
 Architecture: all
