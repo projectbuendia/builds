@@ -1,0 +1,27 @@
+Origin: Buendia
+Label: Buendia Debian Packages
+Architectures: all
+Components: main
+Description: Buendia Debian Packages
+Suite: unstable
+Date: Mon, 17 Jun 2019 21:32:47 +0000
+MD5Sum:
+ b26a0196a4f4f9aaac6f224b90ae9e54              174 Release
+ c2638aa08dd7e12cfa56b51018889afd            15794 main/binary-all/Packages
+ c2638aa08dd7e12cfa56b51018889afd            15794 main/binary-amd64/Packages
+ c2638aa08dd7e12cfa56b51018889afd            15794 main/binary-i386/Packages
+SHA1:
+ a5a3f62d89fc10cead3baef920411a91cafe5dfd              174 Release
+ 3b33634befd09144e27820b133c337ddbb2ffc2a            15794 main/binary-all/Packages
+ 3b33634befd09144e27820b133c337ddbb2ffc2a            15794 main/binary-amd64/Packages
+ 3b33634befd09144e27820b133c337ddbb2ffc2a            15794 main/binary-i386/Packages
+SHA256:
+ 26505e447708ef70c5d2df4363b00ce67e410fa3d71a47a409280b058ed2cc8b              174 Release
+ 2e0b9253a54a5d8b8589bbca511d67390327849856494de7c5b474264e4fee48            15794 main/binary-all/Packages
+ 2e0b9253a54a5d8b8589bbca511d67390327849856494de7c5b474264e4fee48            15794 main/binary-amd64/Packages
+ 2e0b9253a54a5d8b8589bbca511d67390327849856494de7c5b474264e4fee48            15794 main/binary-i386/Packages
+SHA512:
+ a45bb1144682176b1855d156a8deb391dd8825a6900f386d5ff75004d2d20712eb9013a69c7650446af0e26d504317f2a4051dcf2286183062be16a3f9c21830              174 Release
+ 71a01ee540151f041dfd116087241bec6af6f0fccb83f830a62bcb6ff5e2cb30d2c3d1724103a457d30e408ef6c680c9fff31e3f28c6e53b1225fa318071333f            15794 main/binary-all/Packages
+ 71a01ee540151f041dfd116087241bec6af6f0fccb83f830a62bcb6ff5e2cb30d2c3d1724103a457d30e408ef6c680c9fff31e3f28c6e53b1225fa318071333f            15794 main/binary-amd64/Packages
+ 71a01ee540151f041dfd116087241bec6af6f0fccb83f830a62bcb6ff5e2cb30d2c3d1724103a457d30e408ef6c680c9fff31e3f28c6e53b1225fa318071333f            15794 main/binary-i386/Packages
