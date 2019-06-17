@@ -1,0 +1,223 @@
+Package: fontconfig-config
+Architecture: all
+Version: 2.13.1-2
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: fontconfig
+Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+Installed-Size: 441
+Depends: debconf (>= 0.5) | debconf-2.0, ucf (>= 0.29), fonts-dejavu-core | ttf-bitstream-vera | fonts-liberation | fonts-freefont
+Breaks: libfontconfig1 (<< 2.13.0)
+Filename: java/fontconfig-config_2.13.1-2_all.deb
+Size: 280392
+MD5sum: bf030a59aaa40076b77af1cd5037ae2e
+SHA1: 00d0006ac2f132fcdafcbe94792c24dbf119c4cf
+SHA256: 9f5d34ba20eb156ef62d8126866a376be985c6a83fdcfb33f12cd83acac480c2
+SHA512: dccce73689e82ac274d1d86a22b2cd2a772c2882ba46d7bdf13e7fec21c1e70ad478df220e80b4d47151cb99be7c042533a40754705d545829acd03c1ceb35f2
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+
+Package: libfontconfig1
+Architecture: amd64
+Version: 2.13.1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: fontconfig
+Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+Installed-Size: 525
+Provides: libfontconfig
+Depends: libc6 (>= 2.14), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.3.9), libuuid1 (>= 2.16), fontconfig-config (>= 2.13.1-2)
+Breaks: xpdf (<= 3.03-11)
+Filename: java/libfontconfig1_2.13.1-2_amd64.deb
+Size: 346380
+MD5sum: e22d0b57bf7c099e4806363828fc0fc2
+SHA1: d9ecaeda7ca76dfd8259fe8ccb33e9b00f0c7b03
+SHA256: 6766d0bcfc615fb15542efb5235d38237ccaec4c219beb84dbd22d1662ccea8f
+SHA512: 2d503b87af30ae4f8107156098eaa58688143cbbb78cab05e62c40db078ac2b2568c893610876737032c9b3627a33c273e75507057ff78ebef3afb9ffbd9e8a4
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - runtime
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the runtime library needed to launch applications
+ using fontconfig.
+
+Package: libjpeg62-turbo
+Architecture: amd64
+Version: 1:1.5.2-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libjpeg-turbo (1:1.5.2-2)
+Maintainer: Ondřej Surý <ondrej@debian.org>
+Installed-Size: 472
+Provides: libjpeg62 (= 1:1.5.2-2+b1)
+Depends: libc6 (>= 2.14)
+Conflicts: libjpeg62
+Replaces: libjpeg62
+Filename: java/libjpeg62-turbo_1%3a1.5.2-2+b1_amd64.deb
+Size: 133808
+MD5sum: 023799d40ac169fffb6f8b69d936004e
+SHA1: dc28b66f4c606dfeb988255bc27e841da24b43d2
+SHA256: 19fa4d492c59e051f00334b1a13bcd3579b3c199623a23e68476cb46d5b1d590
+SHA512: 60de1c4024bc211a8d93a33c6448c6006e016d81f9bf083a5bfcc0277582bfc47009b5327b2540586bc53eeeb9324b163b43ac2fe9f3cdc98979554e85487b2e
+Homepage: http://www.libjpeg-turbo.org/
+Description: libjpeg-turbo JPEG runtime library
+ The libjpeg-turbo JPEG library is a library for handling JPEG files.
+ .
+ libjpeg-turbo is a JPEG image codec that uses SIMD instructions (MMX,
+ SSE2, NEON) to accelerate baseline JPEG compression and decompression
+ on x86, x86-64, and ARM systems.  The libjpeg-turbo JPEG library is
+ an API/ABI compatible with the IJG JPEG library.
+ .
+ This package contains the shared runtime library.
+
+Package: openjdk-7-jdk
+Architecture: amd64
+Version: 7u161-2.6.12-1
+Multi-Arch: same
+Priority: optional
+Section: java
+Source: openjdk-7
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Installed-Size: 20313
+Provides: java-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-sdk, openjdk-7-jdk-headless
+Depends: openjdk-7-jre (= 7u161-2.6.12-1), libc6 (>= 2.2.5), libx11-6
+Recommends: libxt-dev
+Suggests: openjdk-7-demo, openjdk-7-source, visualvm
+Filename: java/openjdk-7-jdk_7u161-2.6.12-1_amd64.deb
+Size: 16171552
+MD5sum: 6bcdbafafa57d78adaac3b75bfa6a93e
+SHA1: 53d476a4b23c7e5c2704c4384c29f0e297de064f
+SHA256: c08af876e8c6ca0f6d8313cd9d6253ff9e81ccb8ca6f4a918be16a8cd13b747e
+SHA512: d3aef899f1c31d43cdf0bbcb138f98afe1a85ae07cef168b7f34b1a93eb83f6fc6f808dad0357adf3f57ebd00f78e76839bc71e3e6a9fd1c72be764d9b29a353
+Homepage: http://openjdk.java.net/
+Description: OpenJDK Development Kit (JDK)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre-headless
+Architecture: amd64
+Version: 7u161-2.6.12-1
+Built-Using: rhino (= 1.7.7.1-1)
+Multi-Arch: same
+Priority: optional
+Section: java
+Source: openjdk-7
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Installed-Size: 55741
+Provides: java-runtime-headless, java2-runtime-headless, java5-runtime-headless, java6-runtime-headless, java7-runtime-headless
+Pre-Depends: multiarch-support
+Depends: ca-certificates-java, java-common (>= 0.28), libcups2, liblcms2-2 (>= 2.2+git20110628), libjpeg62-turbo (>= 1.3.1), libnss3 (>= 2:3.17.1), util-linux (>= 2.26.2-4), libc6 (>= 2.14), libfontconfig1 (>= 2.12), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.26.0), libkrb5-3 (>= 1.6.dfsg.2), libpcsclite1 (>= 1.3.0), libpulse0 (>= 0.99.1), libsctp1 (>= 1.0.10+dfsg), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Suggests: icedtea-7-jre-jamvm (= 7u161-2.6.12-1), libnss-mdns, sun-java6-fonts, fonts-dejavu-extra, fonts-ipafont-gothic, fonts-ipafont-mincho, fonts-wqy-microhei, fonts-wqy-zenhei, fonts-indic
+Conflicts: icedtea-netx (<< 1.1.1-2~)
+Breaks: icedtea-netx (<< 1.4-2)
+Replaces: openjdk-7-jre-lib (<< 7u45-2.4.3-1)
+Filename: java/openjdk-7-jre-headless_7u161-2.6.12-1_amd64.deb
+Size: 40129812
+MD5sum: 5f37e18b051e02172e0c927f834da8a8
+SHA1: 28ab178fed5712d28f038b5d92640e46e8ee9b84
+SHA256: 79f4582ffaedafd0f45195df9be5ff50ce8ccedf9163ed212d1e1ad031247695
+SHA512: 4fd9e5c52786f91dc1b4bb31fef43a4dfba3db3cb4abefce81840e54b08a19a0944788937a4660f7c1572679ce62400b4568c40bc39b20faf90f2e0556cd350e
+Homepage: http://openjdk.java.net/
+Description: OpenJDK Java runtime, using Hotspot JIT (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot JIT.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre
+Architecture: amd64
+Version: 7u161-2.6.12-1
+Multi-Arch: same
+Priority: optional
+Section: java
+Source: openjdk-7
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Installed-Size: 550
+Provides: java-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime
+Depends: openjdk-7-jre-headless (= 7u161-2.6.12-1), libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0 (>= 2.24), libgtk2.0-0 (>= 2.14), libjpeg62-turbo (>= 1.3.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpng16-16 (>= 1.6.2-1), libx11-6, libxcomposite1 (>= 1:0.3-1), libxext6, libxi6, libxrender1, libxtst6, zlib1g (>= 1:1.1.4), libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2)
+Recommends: fonts-dejavu-extra
+Suggests: icedtea-7-plugin
+Conflicts: icedtea-gcjwebplugin (<< 1.0-1ubuntu4)
+Replaces: openjdk-7-jre-headless (<< 7u65-2.5.1-0~)
+Filename: java/openjdk-7-jre_7u161-2.6.12-1_amd64.deb
+Size: 176652
+MD5sum: 190c7d5b069cfdc56c85a9278f3752d3
+SHA1: 41dc68f1a1f85af7bc41337951ec49d69e5f10bc
+SHA256: b660f006b51f21b4bb0935b11af163d56d6024cef7efd9e0951b80a0cc362c49
+SHA512: 7e84d0b9a81d9e18c5598f07406cfc510157d26c2556af6202f474bfcf0bb4dd2168e9929599022d35135094612a229691b2ced066a9ff17a0d6763f5982afeb
+Homepage: http://openjdk.java.net/
+Description: OpenJDK Java runtime, using Hotspot JIT
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot JIT.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: tomcat7-admin
+Architecture: all
+Version: 7.0.56-3+deb8u11
+Priority: optional
+Section: java
+Source: tomcat7
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 193
+Depends: tomcat7-common (>= 7.0.56-3+deb8u11)
+Filename: java/tomcat7-admin_7.0.56-3+deb8u11_all.deb
+Size: 41882
+MD5sum: bdcf862411c8d8371014a0147de2cfb2
+SHA1: 793b29b4fc00caaa5735e60b58b5b68956ac1e27
+SHA256: 5aaae5b92ac6bc7d91499c278aeb466cbf985f589698a62647bb7931849bece6
+SHA512: 3639d03f1c871b4f6b47d204a7f16978f8c009e31b687ef7091340fef3e42460720fb9607cdf60f4ebeeeea5ad8460898153bc28fc35180646874d179ffa5310
+Homepage: http://tomcat.apache.org
+Description: Servlet and JSP engine -- admin web applications
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the administrative web interfaces.
+
+Package: tomcat7
+Architecture: all
+Version: 7.0.56-3+deb8u11
+Priority: optional
+Section: java
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 370
+Depends: tomcat7-common (>= 7.0.56-3+deb8u11), ucf, adduser, debconf (>= 0.5) | debconf-2.0
+Recommends: authbind
+Suggests: tomcat7-docs (>= 7.0.56-3+deb8u11), tomcat7-admin (>= 7.0.56-3+deb8u11), tomcat7-examples (>= 7.0.56-3+deb8u11), tomcat7-user (>= 7.0.56-3+deb8u11), libtcnative-1 (>= 1.1.30)
+Filename: java/tomcat7_7.0.56-3+deb8u11_all.deb
+Size: 53466
+MD5sum: 689ce1a74b0644ef3ec1eb493505cdba
+SHA1: 86433fabed4861cc2fa144360ed969e893452f94
+SHA256: 8b02869403c7f0ff391b0c380b4c6a96f5076beafceaa36b056db6836ba0e367
+SHA512: 82c9658a35123ae8880014f2f3c2d562ca9b1850e40fbfbdeda4212c2e35cab0428485886c287c66fc7067c03128a39e552d6d9ef92503568532b479cc668f76
+Homepage: http://tomcat.apache.org
+Description: Servlet and JSP engine
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains only the startup scripts for the system-wide daemon.
+ No documentation or web applications are included here, please install
+ the tomcat7-docs and tomcat7-examples packages if you want them.
+ Install the authbind package if you need to use Tomcat on ports 1-1023.
+ Install tomcat7-user instead of this package if you don't want Tomcat to
+ start as a service.
+

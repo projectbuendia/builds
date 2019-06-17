@@ -1,0 +1,78 @@
+Package: fontconfig-config
+Architecture: all
+Version: 2.13.1-2
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: fontconfig
+Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+Installed-Size: 441
+Depends: debconf (>= 0.5) | debconf-2.0, ucf (>= 0.29), fonts-dejavu-core | ttf-bitstream-vera | fonts-liberation | fonts-freefont
+Breaks: libfontconfig1 (<< 2.13.0)
+Filename: java/fontconfig-config_2.13.1-2_all.deb
+Size: 280392
+MD5sum: bf030a59aaa40076b77af1cd5037ae2e
+SHA1: 00d0006ac2f132fcdafcbe94792c24dbf119c4cf
+SHA256: 9f5d34ba20eb156ef62d8126866a376be985c6a83fdcfb33f12cd83acac480c2
+SHA512: dccce73689e82ac274d1d86a22b2cd2a772c2882ba46d7bdf13e7fec21c1e70ad478df220e80b4d47151cb99be7c042533a40754705d545829acd03c1ceb35f2
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+
+Package: tomcat7-admin
+Architecture: all
+Version: 7.0.56-3+deb8u11
+Priority: optional
+Section: java
+Source: tomcat7
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 193
+Depends: tomcat7-common (>= 7.0.56-3+deb8u11)
+Filename: java/tomcat7-admin_7.0.56-3+deb8u11_all.deb
+Size: 41882
+MD5sum: bdcf862411c8d8371014a0147de2cfb2
+SHA1: 793b29b4fc00caaa5735e60b58b5b68956ac1e27
+SHA256: 5aaae5b92ac6bc7d91499c278aeb466cbf985f589698a62647bb7931849bece6
+SHA512: 3639d03f1c871b4f6b47d204a7f16978f8c009e31b687ef7091340fef3e42460720fb9607cdf60f4ebeeeea5ad8460898153bc28fc35180646874d179ffa5310
+Homepage: http://tomcat.apache.org
+Description: Servlet and JSP engine -- admin web applications
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the administrative web interfaces.
+
+Package: tomcat7
+Architecture: all
+Version: 7.0.56-3+deb8u11
+Priority: optional
+Section: java
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Installed-Size: 370
+Depends: tomcat7-common (>= 7.0.56-3+deb8u11), ucf, adduser, debconf (>= 0.5) | debconf-2.0
+Recommends: authbind
+Suggests: tomcat7-docs (>= 7.0.56-3+deb8u11), tomcat7-admin (>= 7.0.56-3+deb8u11), tomcat7-examples (>= 7.0.56-3+deb8u11), tomcat7-user (>= 7.0.56-3+deb8u11), libtcnative-1 (>= 1.1.30)
+Filename: java/tomcat7_7.0.56-3+deb8u11_all.deb
+Size: 53466
+MD5sum: 689ce1a74b0644ef3ec1eb493505cdba
+SHA1: 86433fabed4861cc2fa144360ed969e893452f94
+SHA256: 8b02869403c7f0ff391b0c380b4c6a96f5076beafceaa36b056db6836ba0e367
+SHA512: 82c9658a35123ae8880014f2f3c2d562ca9b1850e40fbfbdeda4212c2e35cab0428485886c287c66fc7067c03128a39e552d6d9ef92503568532b479cc668f76
+Homepage: http://tomcat.apache.org
+Description: Servlet and JSP engine
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains only the startup scripts for the system-wide daemon.
+ No documentation or web applications are included here, please install
+ the tomcat7-docs and tomcat7-examples packages if you want them.
+ Install the authbind package if you need to use Tomcat on ports 1-1023.
+ Install tomcat7-user instead of this package if you don't want Tomcat to
+ start as a service.
+
