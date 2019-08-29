@@ -1,4 +1,4 @@
-# Project Buendia build repo
+# Project Buendia builds repo
 
 This GitHub repo makes Project Buendia builds available at https://projectbuendia.github.io/builds/.
 
