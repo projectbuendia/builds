@@ -4,36 +4,36 @@ Architectures: all
 Components: main java
 Description: Buendia Debian Packages
 Suite: unstable
-Date: Mon, 30 Sep 2019 06:49:13 +0000
+Date: Mon, 30 Sep 2019 07:20:45 +0000
 MD5Sum:
- 74d4291623b4b3d09f7d48bcb73bcdc0              179 Release
+ 3b011deb0f6b3fe1e87818484f989d1f              179 Release
  9d7a571941789e89087533fa05f27b22             5972 java/binary-all/Packages
  306ed20c241d5e8645b7ef3bcb906dcb            13062 java/binary-amd64/Packages
  ec9fc3330ee088b2911125cb209ad326            13053 java/binary-i386/Packages
- e555c25619dc1f7391c74a0db00c42e7            79970 main/binary-all/Packages
- e555c25619dc1f7391c74a0db00c42e7            79970 main/binary-amd64/Packages
- e555c25619dc1f7391c74a0db00c42e7            79970 main/binary-i386/Packages
+ 18dcf805a8de118a3fae509c92115952            95471 main/binary-all/Packages
+ 18dcf805a8de118a3fae509c92115952            95471 main/binary-amd64/Packages
+ 18dcf805a8de118a3fae509c92115952            95471 main/binary-i386/Packages
 SHA1:
- 60c222958273e6554b4e07b781a706a62ac56182              179 Release
+ cfb933e5f10a0944a499fa1be9d40c88097f6c35              179 Release
  89be397d062f1d6c3514e12401af5c657146706e             5972 java/binary-all/Packages
  fedd0505ca4afdcd9007ed50f0f335e5cbc75df6            13062 java/binary-amd64/Packages
  823216d312d2a16b00063a9f6630bbfb91205e7c            13053 java/binary-i386/Packages
- 0af629775c6d18160a5cba35c996c1e5844773ca            79970 main/binary-all/Packages
- 0af629775c6d18160a5cba35c996c1e5844773ca            79970 main/binary-amd64/Packages
- 0af629775c6d18160a5cba35c996c1e5844773ca            79970 main/binary-i386/Packages
+ 36e1cd4bd5a074611bb8e5d20564cc707e54e5e5            95471 main/binary-all/Packages
+ 36e1cd4bd5a074611bb8e5d20564cc707e54e5e5            95471 main/binary-amd64/Packages
+ 36e1cd4bd5a074611bb8e5d20564cc707e54e5e5            95471 main/binary-i386/Packages
 SHA256:
- 87c582f2926cbf6f76887954f0c26233873494ecedbb6f99ef151b335d160e25              179 Release
+ 446378e7cb839737702c91a51e089c737d46bc156853dc9f1473af503525344f              179 Release
  6640a68694092038895cf9a634f04a49aaba0c11948a06abbd6ba77b2788a9b7             5972 java/binary-all/Packages
  b77a4b0dce17820c4c9cdd81c31a2a2c2725044c211e943242986b5387841833            13062 java/binary-amd64/Packages
  40b273b68f40fd0bff99822208ff4ba6186929cf3fe260baa87398d3fff2489f            13053 java/binary-i386/Packages
- a6622b5dbf6accb08dd5130d608b00e84bc6d8a82376b85e3ddb8e71ad62eef1            79970 main/binary-all/Packages
- a6622b5dbf6accb08dd5130d608b00e84bc6d8a82376b85e3ddb8e71ad62eef1            79970 main/binary-amd64/Packages
- a6622b5dbf6accb08dd5130d608b00e84bc6d8a82376b85e3ddb8e71ad62eef1            79970 main/binary-i386/Packages
+ 3ba826b660f334c457d12a443227146490ed6016a59d9b900ce1a15382149f64            95471 main/binary-all/Packages
+ 3ba826b660f334c457d12a443227146490ed6016a59d9b900ce1a15382149f64            95471 main/binary-amd64/Packages
+ 3ba826b660f334c457d12a443227146490ed6016a59d9b900ce1a15382149f64            95471 main/binary-i386/Packages
 SHA512:
- 0ad4175d00c2e40bb816a6e8ed6c604df907aeb6e1d98c77a410fabc4b542977f29ddfe9a7fd3a79ac99b14a7c8e58b589eee9712a0d2e1f6f12ac1563d2ef8f              179 Release
+ 1ca52ecb975a4cafe7dac4bb90ddb44accdf2edf3e74c05dcfe96bc79f47943ed4a19c6dfa805868184dbccced8a395a1f7c3c638c2c240e5b1a3abcfcb0eed4              179 Release
  b9435a7fd612e9442724246bcff47a4b3db2cf91bf9ea7adb0aa9b07ba380c32c92254929a522534dade17e01420c60c37af5b33cc8d5b1ed66dabf40ff78234             5972 java/binary-all/Packages
  bebed192c31b36f25ac146014eac1587e836ea32586d2e7d63549f617c3ba1dbbb7b7786926ee7b3b064f408286f9d393d4fee6a13d2becaef260f22d0fdc60a            13062 java/binary-amd64/Packages
  5bed4f9671080b11184e396d11521457854f9921dce9d76308b62a13d2aad6b732f736a916e53263c5759cb8e3dc3c7c9d3b7e853c6e96b71a782bb8cf97911d            13053 java/binary-i386/Packages
- 78e5e7b043d8b164a6c3c69a975d567a6240e92ce26a772fc0cfe2eaa3b769f111e5b2e87c0c869e79feabcaadb23e3c72da23f9bf247e2044c4b35b7da722f6            79970 main/binary-all/Packages
- 78e5e7b043d8b164a6c3c69a975d567a6240e92ce26a772fc0cfe2eaa3b769f111e5b2e87c0c869e79feabcaadb23e3c72da23f9bf247e2044c4b35b7da722f6            79970 main/binary-amd64/Packages
- 78e5e7b043d8b164a6c3c69a975d567a6240e92ce26a772fc0cfe2eaa3b769f111e5b2e87c0c869e79feabcaadb23e3c72da23f9bf247e2044c4b35b7da722f6            79970 main/binary-i386/Packages
+ 8e98ee66d32a68602acfa3995668e30c12535aa9177e4e088bf45bf32d451bf07e5086d8a93cc3325fd4b0b22b384f946abcb52863fc85894dec9b3e80f937cb            95471 main/binary-all/Packages
+ 8e98ee66d32a68602acfa3995668e30c12535aa9177e4e088bf45bf32d451bf07e5086d8a93cc3325fd4b0b22b384f946abcb52863fc85894dec9b3e80f937cb            95471 main/binary-amd64/Packages
+ 8e98ee66d32a68602acfa3995668e30c12535aa9177e4e088bf45bf32d451bf07e5086d8a93cc3325fd4b0b22b384f946abcb52863fc85894dec9b3e80f937cb            95471 main/binary-i386/Packages
