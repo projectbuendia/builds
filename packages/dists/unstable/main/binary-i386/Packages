@@ -1,395 +1,59 @@
-Package: buendia-db-migrate
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Filename: unstable/buendia-db-migrate_0.16.6+b1207_all.deb
-Size: 1606
-MD5sum: 93617f439639105420a2d792cd80d1f2
-SHA1: 07775f92da02a2a7ebbe2d56e40cd8737ec76f03
-SHA256: e187a0e7dcadb7a42f87f28848f501446175e98e858ef76537bc36ba4f42e30d
-SHA512: f4747b76a943c5da28bfe11930d559ddb3a55e0c2d9e2ae9e4cce5903954c6e7f8af903dc1179db1a38706506876807898fd7b167a4a04b23995803b02693be4
-Description: Migrates a Buendia database from version to version
-
-Package: buendia-dashboard
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils, buendia-server
-Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
-Filename: unstable/buendia-dashboard_0.16.6+b1207_all.deb
-Size: 8664
-MD5sum: 66a683d858773eca7671be427b576745
-SHA1: 7f3ee98da1814eb039a7b80d5c6f5c0cb9e6a9af
-SHA256: a0feac4ec70a20cd3c3f064e6b0a879cdb71d1f6211a209eb64d18bba0edb153
-SHA512: e7e34089694258a2aaaeea91e5c773f0c43d3f62cc7eb9aba7adc5fe73ee416742570c3ffee18d27df692ce1a6835bfd88597a41f9281d8a35324e736ecad25e
-Description: Serves a system status and administration page for Buendia.
-
-Package: buendia-ntpserver
+Package: buendia-setclock
 Architecture: all
 Version: 0.16.2+b1118
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Depends: ntp
-Filename: unstable/buendia-ntpserver_0.16.2+b1118_all.deb
-Size: 1844
-MD5sum: c4c255e596bddbc3af5368714c15dc24
-SHA1: 55016115e6e7b4b7e2c1d4dd6827258249cfd6f7
-SHA256: 33acefab086befe8f5131320b3cbb7836cb0e963b20f6ba9bbe330f5440a0f93
-SHA512: 1fdd070d385b302002ed0ba7089a1c1f666d3e8160f37ce3d54a30905c33f7fac8caf794e960f15f54f17e7524d73092aa4e214c9d9b6d230a305cf3b9cd4303
-Description: NTP server configured for Buendia
-
-Package: buendia-tomcat7
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
-Filename: unstable/buendia-tomcat7_0.16.5+b1188_all.deb
-Size: 5678
-MD5sum: 92554c0a19cf5a5cedaf67153baf0464
-SHA1: 1df6e1b045f5183392df91611283a8f7f1667db0
-SHA256: da0fe75e5fab902db01c38f25e7c454b15e87b0ecf7159307d2508d84659b064
-SHA512: 9e2b2c890bd1c288a6ad042e964731d8e8294857adf8131e132331ca8462218b97940ff944fd4efda51a040ab16421d49c3b1d588fd3d59753afa0b4192babeb
-Description: Tomcat 7 configured for Buendia
-
-Package: buendia-dashboard
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils, buendia-server
-Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
-Filename: unstable/buendia-dashboard_0.16.5+b1193_all.deb
-Size: 8638
-MD5sum: e44ddd5ba4cbddd3e46ccdb158ff9552
-SHA1: 6611fe0391fcb65c7a58e569bbcdbf6700829249
-SHA256: 56964d52c6db50f21df8aaaa7ffdaddefbc73b0564ba8dc2691a7c404ca94c58
-SHA512: 962e93d47b5db609f5f65126bd8b9748bfd16733fd4b8f95c0e7b7373554dabf71390ed0c39596b160515f70d27340625a5eb0d2b3e7811efb53ecc47171b474
-Description: Serves a system status and administration page for Buendia.
-
-Package: buendia-update
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, util-linux
-Filename: unstable/buendia-update_0.16.6+b1203_all.deb
-Size: 4780
-MD5sum: 21716fda1b32114a24e18bfa1bd6b8f8
-SHA1: 7e30071d9bffee90ae6a3723cf4271b6008d4698
-SHA256: ee752f4c89e4fea40fe7083b47ae60c6b72a2482f3adbc9b19590cf33bf5f539
-SHA512: bbc8fbd1d6603e928e94b53d2daa98483510ae833674d1f96d0834b9d2f1902b30c7108cffbe79b1690790cc8fdd3a4febb4b5730cd826ffd9514d783fcdbac1
-Description: Keeps Buendia packages installed and up to date
-
-Package: buendia-mysql
-Architecture: all
-Version: 0.16.2+b1114
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, mysql-server, sysvinit-utils, unzip, zip
-Filename: unstable/buendia-mysql_0.16.2+b1114_all.deb
-Size: 4146
-MD5sum: 28d8f73b8d945b68ff8cced9673da562
-SHA1: 969bf2cbd8be9ddd0868383209ed0d9513f0ef23
-SHA256: fca92c79d8efd9d392462ae1bc761848d8dcd0130a44946313a8f2ba3a5ef838
-SHA512: 565da1cdf28fcba800da45ecae2499b7bf17469e4b585987a2cb41ad5bfa3baad72ebfcb3eafbf714dafbcadf51a7d5b0f49c676f139e8c1ad2d1a10a8b39c8a
-Description: MySQL server configured for Buendia
-
-Package: buendia-networking
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
-Filename: unstable/buendia-networking_0.16.6+b1207_all.deb
-Size: 6988
-MD5sum: 16bb7c3e25cb34ccd0e21548f2ad5db7
-SHA1: 2769e4dc1b022a7b82d57e041a529fac78fb094d
-SHA256: f7808dfd8ee5597b110524db79436b6c43eef2297ae5c911a6a34ee2556d4bdb
-SHA512: b61ee68593339a92b28ba200cca744d1866ade0eded61e92faa990ee24e32beb93c8902046043bc075163ea046ddd61fc16fb457120d194492afab71bdc3873b
-Description: Wifi AP and DHCP/DNS service for Buendia
-
-Package: buendia-pkgserver
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: nginx, unzip, python, apt-utils
-Filename: unstable/buendia-pkgserver_0.16+b1065_all.deb
-Size: 8194
-MD5sum: 209fd0fd2e9a5f80b322dab1dba60031
-SHA1: f8997a43c0cb9ba357496af2093c630744fe832b
-SHA256: a99a7153d7366f160c4199d494f359d5069843717be9284beeec90be3c10c7a4
-SHA512: 1afe64e6e7c0022d02c5a5731e2c46272f3d8a0166a7a4240f915bf673b0ee731025b6171c9a713fb9092df262c0db8c3df4e7b47564c27ee2ba2d34d4cbabd6
-Description: Serves up Buendia .deb and .apk files
-
-Package: buendia-pkgserver
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: nginx, unzip, python, apt-utils
-Filename: unstable/buendia-pkgserver_0.16+b1063_all.deb
-Size: 8192
-MD5sum: 300fa48508a61d5292a976a90be3d5f0
-SHA1: f3f8b7407a47298d3568425630548f9a2aa086bc
-SHA256: 668faffcea24eb3baa6bb4535544e3523f35fea9ca2e69c2cb9dfeecc2a0839d
-SHA512: e9e7b0d8475e869d8ea25fee15a85704f486346eda4c87ddc3f45db9e6aef06487c2d7bd6eef72de993f7d767b2ab904006cde890b7da4328fc1679b5eab4080
-Description: Serves up Buendia .deb and .apk files
-
-Package: buendia-db
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-db-init (<=0.16+b1065) | buendia-db-init (>>0.16+b1065), buendia-db-migrate, buendia-utils
-Filename: unstable/buendia-db_0.16+b1065_all.deb
-Size: 1096
-MD5sum: 8b6852abe13f762a250c70dbe8db8c55
-SHA1: f3efbce0bb47b315ec7f4d0cabeacf4e37c1930d
-SHA256: 76b9b6c46acebae4a364552098a6f1af15a8f42a36cc710749fed96c1d2a9f68
-SHA512: f7352e82a1266cf6311a34dd02f2f6595283363c6145fde2e2ac8277027e59d3bd8b2766990a6635d5892abe318c8b723627ee90b5051fe0d1986c4d057cfc0c
-Description: 0.16+b1065-compatible Buendia database state
+Depends: gcc, libc-dev
+Filename: unstable/buendia-setclock_0.16.2+b1118_all.deb
+Size: 1992
+MD5sum: 0802d17e40af5647d36e8b4f64e0a553
+SHA1: 391ee0bea2cbfed6f93f46ca99ebde7b58da8b27
+SHA256: 29b5bbd5dfe7e41bf961620d97fa94f088fdd1f273b6570f3f2d58f6613955f1
+SHA512: 6e7ccc0071acb4f4d08b619cb09b0b64d5fa9d77ecbee8cff29b5b70fc5f77906c7e3df13506c9a8f85fa013906bbee6098c3df60a1656c5c91d2c5f52391ebb
+Description: Sets the system clock to a specified time
 
 Package: buendia-server
 Architecture: all
-Version: 0.16.5+b1188
+Version: 0.16.6+b1207
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Depends: buendia-db (=0.16.5+b1188), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
-Filename: unstable/buendia-server_0.16.5+b1188_all.deb
-Size: 4426876
-MD5sum: 72901feaf530b5fa0e8a9fb96d015e37
-SHA1: c44536edd8d2e535fef631ed689e61dec43a8019
-SHA256: b98d0d08e3a64b18582e997be163e1dc4480ebde4df9445e62b38203a23a864d
-SHA512: 0864bfcb96fac6aba339e2f2643a3cabf1f8fcb1c9208837939c3e4838402074f2df86669682a48c1d31c9dd2c529c05afb791396e6cec52708b4a11ee1526ed
+Depends: buendia-db (=0.16.6+b1207), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
+Filename: unstable/buendia-server_0.16.6+b1207_all.deb
+Size: 4427270
+MD5sum: 98e6dcb3cd0465224603e14f13b96b02
+SHA1: 687833aa669286f8ecafca165ec2fcde783b6620
+SHA256: 7ce5b53986937def4b41da77a5174631f515b5ee76d88506e14e6b2c7c3842d7
+SHA512: 1e8afd1911275e982e852bba2d34009487b22a33b776d3da408f66480dbeb373516b48888bbd40a254842ecd4cff601fe7cd692c4122d8da174879fdfa3d4d74
 Description: Buendia API server (an OpenMRS module)
 
-Package: buendia-site-msf-geneva
+Package: buendia-site-lon
 Architecture: all
 Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-geneva_0.16+b1063_all.deb
-Size: 1720
-MD5sum: adce938679fbd322d7ade2e71a77feb6
-SHA1: 8a7be542f869d51d5c15315b7e9b49567c25e1bb
-SHA256: 6fd2f34d9a3fda01ee3e29fd49745832d32fc2acc105b694264a5dd18ce6eccf
-SHA512: a1e610ff36915cc5a4a1630c8c7116022508dae0e581b52f02da6fda848b2ab5595d0c1f03f6a64c0449968f0dfa9b1eb70bbb898a23b10988ab6d72e64a0143
-Description: Site config: MSF - Geneva demo
-
-Package: buendia-site-test-integration
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test-integration_0.16.6+b1203_all.deb
-Size: 2278
-MD5sum: 4bc5ed66ad39e54e31c193df6b48b934
-SHA1: f5304d56b4890794d12351562ecf06347ce4d0e9
-SHA256: a1b98a129a8b073ed154d7ebd0a38fdb9a1d865968b88b605c57fcb6ae07be1b
-SHA512: 6b146079a159b2401f53080d94fe7dbd935024894660332fbe8984612e7c186707c4e2f86e6e7e270fc978c24bab50ce3ae08b2eae6a8a169a1931141bbc76a7
-Description: Site config: Destructive integration testing
-
-Package: buendia-site-test
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test_0.16.6+b1203_all.deb
-Size: 1770
-MD5sum: 862fdfd6847c5ea1949db218ead7e7f3
-SHA1: 7a790d9303df8267e2e020828409ab3d49c7a933
-SHA256: 79ed4c7d16075699dff87567421ee99c54aef2529543ab609dea9ac9afd380a1
-SHA512: c1cc4c4438a0607227afd073592e4d48f2468ddb1ba620e308bb1a4f5f14b35534acaed4bab9ae1fd6d8ef6ad5713c7b6781ccfca40377722bec6e71985bfeb3
-Description: Site config: Edison - Integration test
-
-Package: buendia-site-dev
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-dev_0.16+b1063_all.deb
-Size: 1776
-MD5sum: 5e07a2fa0d7a31603ea026745eac3912
-SHA1: 24d0a467a4f696401797ce45f29af0d78dec302a
-SHA256: 5e706e4e1ecf64ff93e2ec6290c4a862f6dd1726997d85b04109da21bcbebf09
-SHA512: 36e68860fc90469b78df46feacfd4e276081799bbf4b686344636be5d5d992e68464b39f260e812102bd97f4494d5bee9ee9a31748da3475a63a899ff613e4b3
-Description: Site config: Cloud - Development
-
-Package: buendia-db
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-db-init (<=0.16.5+b1188) | buendia-db-init (>>0.16.5+b1188), buendia-db-migrate, buendia-utils
-Filename: unstable/buendia-db_0.16.5+b1188_all.deb
-Size: 1098
-MD5sum: cfe68456d64b721fc9724e13dcf33518
-SHA1: 3e605f53c874de05b226d0c1283d3649b4e99165
-SHA256: 637d92b95df6e5c85b0d0569841605aad76c1a01ac6ca384b2c3969612e78504
-SHA512: 657a8314555be0d31c67e2383cb71f9b5dc99d8eea4aa6825515e79bc6c88f15450b73e32f2b6bedbd1ed211879a175d0514f775e1245675cada4fda44ceffa0
-Description: 0.16.5+b1188-compatible Buendia database state
-
-Package: buendia-setclock
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: gcc, libc-dev
-Filename: unstable/buendia-setclock_0.16+b1063_all.deb
-Size: 1990
-MD5sum: b1ab23f5f17506878ca436a19401f3c4
-SHA1: 9271c8b2701251cd7fa558a13cb12de53e209cbb
-SHA256: 64cd356ce434797252ecf0547f5390e4c22e445c6857d5327047d3e1d2af833d
-SHA512: 1fccc796d4a7cc197fb9ece014adfaa9fe14cd29a8d0d22220ae657e1936eb35f67c55bd78a901721d134224f35e418d18a48359407027f7182eb660918f6dcb
-Description: Sets the system clock to a specified time
-
-Package: buendia-monitoring
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: cron-daemon
-Filename: unstable/buendia-monitoring_0.16.2+b1118_all.deb
-Size: 4504
-MD5sum: 312beb0f99e9278e2a3e8ffce08d0b07
-SHA1: 1af1ee87383787a3afe069134703c51bce840973
-SHA256: f49d5082bf6a25a78f480158c69f8966db45cedaebb5c63c5f872e74c313d9f9
-SHA512: 4acbfdd7c6a75a76a874ec482b7fd0a2cfcf516dd45818357f97571e3a43d89bae0bd405e78e6d75816e6fdfeb10f5ae934d1914b8bc982469631c5ff991eb2f
-Description: Monitoring and log rotation for Buendia devices.
-
-Package: buendia-dashboard
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils, buendia-server
-Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
-Filename: unstable/buendia-dashboard_0.16.6+b1203_all.deb
-Size: 8666
-MD5sum: eaf9b8b76b7832b30af0424205efd719
-SHA1: 360f71443a4f61b48d6af5a3c5a65d381f25dd22
-SHA256: d45a07385f3daad43a3e0ef3fc6cc63596d893c4535930189df26d6649ce617f
-SHA512: 9ff787d8ab36bff16bdee45d1a86acbece9feb2d5dd9a6bda2dd88e21017854f46e801e42b2278d8cfd8a8ad6564b7dded215fd1eb6e03d768b126552fd068ce
-Description: Serves a system status and administration page for Buendia.
-
-Package: buendia-db
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-db-init (<=0.16.5+b1193) | buendia-db-init (>>0.16.5+b1193), buendia-db-migrate, buendia-utils
-Filename: unstable/buendia-db_0.16.5+b1193_all.deb
-Size: 1098
-MD5sum: 6f044cbf00c790893fb6799f55f90d1a
-SHA1: 0cbfb4802fc82f4ea13b718f840e0a1fbf4807ec
-SHA256: 60300318edc0223b858afd36cc286a9a63282789298877e995c0b4d34a6ad6e7
-SHA512: 6bb18c212915d34a73f9b9d8230f9388c5e9ebf88ce67f2d17b62d1127173ff93b13d810ec06ca532f79bbf1df2766c52467c365ea3883eaa9905bac6f7cc30a
-Description: 0.16.5+b1193-compatible Buendia database state
-
-Package: buendia-tomcat7
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
-Filename: unstable/buendia-tomcat7_0.16+b1065_all.deb
-Size: 5494
-MD5sum: 35f501e117033270f444aff9da2537fe
-SHA1: ee96e2c7c5f3b24be9c58574872957e552a5d9ea
-SHA256: 7d9d2ed4331bf86dfbc75ec6dfe4e72e4066775abe988b905801765386956e2f
-SHA512: 3b9844e0a66c4c67688e27aca5cb320ac4a6540ea15f7455d965d734fedf551450027657b4a1095374b92e800d4d21ff6763e5309b92233f067879a05b944e21
-Description: Tomcat 7 configured for Buendia
+Filename: unstable/buendia-site-lon_0.16+b1063_all.deb
+Size: 1754
+MD5sum: 188dcc51feb602e9a1b043a674c3aafa
+SHA1: a7e783abdd60eec72adeee4e33147529f8fe063a
+SHA256: 8798b9a216b511332f702e2c666d516e864561628d6b0709d406009872a9dc20
+SHA512: 11fad6d5e8c6474cf91d38663dba46ad7dc0d497aef181210e19456ff135c3847651477f4f251ed0e5f67d9c8fe13d4b2d5cb75ba5042020e251e6d70f4d0b98
+Description: Site config: Google London office
 
 Package: buendia-openmrs
 Architecture: all
-Version: 0.16.3+b1154
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-tomcat7, buendia-mysql
-Filename: unstable/buendia-openmrs_0.16.3+b1154_all.deb
-Size: 36912862
-MD5sum: ac7b851311189ff0c901cbb352ebcb28
-SHA1: 3e2cd2f063b6fe74151615f562e1443ed7489fe3
-SHA256: 12f9740dbf839c18cc0655e3e4c6bf3ed32ed98ae1681b7bd53abaa49e8af8b0
-SHA512: 2b92ad8837d9f10470800f142771ae6ec928f49f8080845c292427b1610c70ebec6b3457554dca1c3731cfb9908ddfb5daa9771e3f8be70441d2999db8e5f499
-Description: OpenMRS configured for Buendia
-
-Package: buendia-site-msf-ks
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-ks_0.16+b1065_all.deb
-Size: 1736
-MD5sum: 423b3b7d58098eaec1c17bba86b0714a
-SHA1: 52c47a12a9248dd0c77061d2f0720c48e38c8c1a
-SHA256: 893e14fb745de4f009a3122e161037348ae0ca4c4037be2d2755f4bda3e0f529
-SHA512: 67fb5dd8460f81025b3f414936f096a9ccd5bb1b293afe392221f2afa87061b42d5eaff4ec6a03de91077d859077ccc1ab7e8976544341b1303639104a5cf0b8
-Description: Site config: MSF - Kissi EMC
-
-Package: buendia-setclock
-Architecture: all
-Version: 0.16.2+b1110
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: gcc, libc-dev
-Filename: unstable/buendia-setclock_0.16.2+b1110_all.deb
-Size: 1988
-MD5sum: 497ecc70024de78f1c8a8b844b2b1b3a
-SHA1: fb04e630928621e61be80b1ed7e89199fcd8bdbb
-SHA256: a94fb1c323cd69702ff01612299066d4b2254376d2a9b6f474d3bbd359a7d53b
-SHA512: 17ee83d37684d028bd16b2c06596b45b19299c9b4cef605babcc13fc7c154ec06e52c9359c31b5f13059752cd777f4f7ea670953e6a7cc0d852114e52741d541
-Description: Sets the system clock to a specified time
-
-Package: buendia-dashboard
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils, buendia-server
-Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
-Filename: unstable/buendia-dashboard_0.16.5+b1188_all.deb
-Size: 8664
-MD5sum: 501e2bc81d0a9baa171ef7d4f541a135
-SHA1: 7f558eb8cf5413af86dbda949b78111bd1393068
-SHA256: bb3d65c32306e3b977ddf6ac6d7f9eeceb138e5bb929e3a8a5050fa6248ff1f9
-SHA512: 04b7865fd9ad2ee6fac146643ebc4c33c5b0fddf5651b610da0106ca4e5ae56d79abaa4dee66671fd19f1f312dfa904449ed83ac74e47a06dc613cff6c5ee1fb
-Description: Serves a system status and administration page for Buendia.
-
-Package: buendia-db-init
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-mysql, buendia-utils
-Depends: buendia-site
-Filename: unstable/buendia-db-init_0.16.6+b1207_all.deb
-Size: 13232732
-MD5sum: 87260ec3f849ad153806d1ea55885455
-SHA1: 5545fa807064f5671ca908ced1032ec9e1f2d43a
-SHA256: 8f4d02fe4fffff2a3df178468423076cf983b63af3de273cd0273a11b8234355
-SHA512: d87336bc37f0dc211f2d2f66f80bd4fa2fe68ed8965e2f1ffa33544b7a72960ac6a348f73b172d1be93417ee38bae8d21e6dff119739899c98d66e2f780a1008
-Description: Initial data for the Buendia database
-
-Package: buendia-networking
-Architecture: all
 Version: 0.16.5+b1193
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
-Filename: unstable/buendia-networking_0.16.5+b1193_all.deb
-Size: 6976
-MD5sum: 70f6a8b8d28b627fe0f347469edc6fbf
-SHA1: 41297d9aa77f610f0d9e09685945bf100a632062
-SHA256: 6f8d20d1606b119fda37e55b1e1e65689314f01e11903463a39497e29bd06904
-SHA512: 54efcff1e76eb96a6f21aca63b059ae170e013edfaf01dffb95175d3f6edc2f326e8265dbba9f946c0636f84344f20ea7132c11ba4883a13fbb78cc1a6ca2575
-Description: Wifi AP and DHCP/DNS service for Buendia
+Depends: buendia-tomcat7, buendia-mysql
+Filename: unstable/buendia-openmrs_0.16.5+b1193_all.deb
+Size: 36912030
+MD5sum: aa9f684cc12f2cf02dc29e6176772efd
+SHA1: 691b94c804945d2bcad5da2b66dcdb5a7d90acdf
+SHA256: b7d19b543d0365afb036dd43733ee2580649c34c7ce1b02fb63da4449629605e
+SHA512: 16ce1c508d1007a5f691460c35aa9ad5e7b27c020699b9ff597428f017f6c6a984457394f69220a6769e8be3fc3c87f21d843f13c171d2208afcef601aaf23ca
+Description: OpenMRS configured for Buendia
 
 Package: buendia-site-msf-geneva
 Architecture: all
@@ -406,218 +70,89 @@ SHA256: a45b4014ab7ed14e4bf61711400e6c2e1dcc8f2d2cf338a2b97de2ac9663e239
 SHA512: a228ad748f5d44e78041a268128be44127da8235fa01873e996ae1f36503931df50ee269f32091e300f089981515eb4861905d0283c7eacbc0e88099be1f9e4e
 Description: Site config: MSF - Geneva demo
 
-Package: buendia-backup
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, buendia-mysql, cron-daemon
-Filename: unstable/buendia-backup_0.16.5+b1188_all.deb
-Size: 10496
-MD5sum: f39993224a1d9a5b6e3f9bcb01cdf6aa
-SHA1: e6191588bb1650ba4ed915e02543a16d8078d516
-SHA256: a1cea46f299e16569fdc6810352a7c0d63ecfe77e3aee80105860abda9ff6eac
-SHA512: 2a871f70b020d8bafac31c0dfae0ed051b6a78bc509a3d26f60d8b0c1276d7b9093bf837a24a31c4dc65540702328dac858bb1dcae245d140cf2f36bf200491e
-Description: Backup and restore for Buendia
-
-Package: buendia-update
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, util-linux
-Filename: unstable/buendia-update_0.16+b1065_all.deb
-Size: 4232
-MD5sum: c229d06ec454f3b94bb7c63ae89409b2
-SHA1: 925352b461f60ec3cb36fdd586e46764f3e2a24e
-SHA256: 9ca6d5268df4248f75f4acdbf5a1c6aafba56d5b75b4bb4c91fa1702ec38311e
-SHA512: a172efc0e2c387c2217044d6ba333ecdb931dacf54155cbccf57b181ad856b992e3863c3bb146e745c92e7f67ed32ccccf05e7df3e8a23f2e486abbdade1bfd8
-Description: Keeps Buendia packages installed and up to date
-
-Package: buendia-pushclock
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: gcc, libc-dev
-Filename: unstable/buendia-pushclock_0.16.2+b1118_all.deb
-Size: 2016
-MD5sum: 474fba277f361edfb37af897effd84c8
-SHA1: cae36bdbfbe5631d5d9472232580acaf9badbbc3
-SHA256: a296d1c259ee2af4992bbf2c83b4366e42bc2b7082bbd1f992b5acbe1307b3ea
-SHA512: 90ec6ce7e97a37ab04f65bd74450ac99df4613110009dce3bc3f80f53d6e172a7af115463466cd37240bcb7abcc66adb2180aa765ca5633cffed045447d823d7
-Description: Advances the system clock to a specified time
-
-Package: buendia-site-test-integration
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Depends: buendia-dashboard, buendia-backup, buendia-monitoring, buendia-server
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test-integration_0.16+b1065_all.deb
-Size: 2142
-MD5sum: 29327ea50d2cfe938c51773a3ff9f6c2
-SHA1: cd3e5561f776d744d060830d50afef5c26170143
-SHA256: 6308b716ae6589d0602e2e12335e2a99980dc87a980352a9f1d5dd344efba91f
-SHA512: 0a7d825a2d49bb6660b8e6452dcd02c117af694eeb6bcf6369ec31e4d50ffbdf7cd24d0f8a3a6a9a5d8f7e8a8b36a198dcd263da5b29c82e9d92357cdb5d172e
-Description: Site config: Destructive integration testing
-
-Package: buendia-utils
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Depends: coreutils, cron-daemon, curl, perl
-Filename: unstable/buendia-utils_0.16+b1065_all.deb
-Size: 13950
-MD5sum: 3fc6b20d3ab315e2649daa49fb3d6465
-SHA1: 81b95bf5f60974e73db3b91ce217982a3b6cdae8
-SHA256: d6044546f7da3630c0128f9a498a5afd34edc8e03a93a63285a13edf09bf1de3
-SHA512: 250bb7a56674eba5727d05a16b2cfb6621fdb49b8085fc22c6aa281314a633e8105a08e6ac0806dfc069fe67a2784b51742b9b1e6a8bc1070ffcbcc0054c91ba
-Description: Utility scripts for Buendia
-
-Package: buendia-site-lon
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-lon_0.16+b1065_all.deb
-Size: 1758
-MD5sum: ca99e7736106d3e6e5ff26b0be42c10e
-SHA1: 87238938b09a461b9b1e1fe794406038852996e7
-SHA256: 787e1cb36aa8430901bf3513c75e090eafa9cad27b64053e7e7ae9f257608f48
-SHA512: 13ecf71e999c2173707415a3b74502abc49dee6be09201845ece5dd9f9b3370a1225b959ec3e5f773507afc06a7d25e90f6478c3866556773336097ca3f15ffb
-Description: Site config: Google London office
-
 Package: buendia-sshd
 Architecture: all
-Version: 0.16.2+b1118
+Version: 0.16+b1065
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
 Depends: openssh-server
-Filename: unstable/buendia-sshd_0.16.2+b1118_all.deb
-Size: 1784
-MD5sum: bf978473d12e8bbeba5f26ca728e46e5
-SHA1: dd1fc0189e7446faed154109fe21923356989dab
-SHA256: 366d4d13c19d81f274e8edd2fe66e06ff5ed89de27aaae20ab5213af6f8c4cf0
-SHA512: 1969cab5e8b462d524f2b86d7a9c63c667b2a0140bc9e200a11453945c5c0b1334024824cb36df72230a35d452ed39312e903c725157c15ad8332084c79c06ef
+Filename: unstable/buendia-sshd_0.16+b1065_all.deb
+Size: 1788
+MD5sum: e8f7176f173d22f8e33f8d8fb231e1b8
+SHA1: 8c73688df2c6779a8a1782d4cf55506b43f8ccc4
+SHA256: 5e86f6a389ecf1518b216436394f0919a8a4b5010d226bc4ec08211f9de0399e
+SHA512: c1fcfebd3ca66f130e944d43f186600a837d54bd2d5982c704bfd6f158fd14d1c6908528b016d7c04b4d91a223b636ef45601f313f53e45108d60993d699f91e
 Description: sshd configured for Buendia
 
-Package: buendia-backup
+Package: buendia-site-msf-chad-bokoro
 Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, buendia-mysql, cron-daemon
-Filename: unstable/buendia-backup_0.16.6+b1207_all.deb
-Size: 10476
-MD5sum: 760fa2e34c296df1dbe8fa9908f17918
-SHA1: c6489ec1b7dcd6f937160a4d9bb1e6f5f5c65e55
-SHA256: 3b8beb92e543562309b7368072699cc1070981146bc9f53b2b89b6fd4ea8a2ef
-SHA512: 1c1c8e884bbdac01d0ae0483b0675837e33da924652b04578fec567e0f6d1244d82795f64ae02062e3da9e4754c08f3c2010de633ec9a9f8d73e261b3452a1f9
-Description: Backup and restore for Buendia
-
-Package: buendia-update
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, util-linux
-Filename: unstable/buendia-update_0.16.5+b1193_all.deb
-Size: 4780
-MD5sum: cdbec14e782a3c0661f8fd9a1b99f892
-SHA1: 67f732ec3d5a52bea7357127f2b1a38b622d3524
-SHA256: 10e1e52a2407346f50dd432b440f481a12987ca0fd5b53971a3d811ac99b3365
-SHA512: 11cc9399e4242ad6a6e75a994d8baaff10111c9e48d8a4aed7dc9483006a606b6eb0fe860e91df2a214b937a19c79f33427fb13376319e7927ed7f078cefaf8f
-Description: Keeps Buendia packages installed and up to date
-
-Package: buendia-site-msf-ks
-Architecture: all
-Version: 0.16+b1063
+Version: 0.16+b1065
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-ks_0.16+b1063_all.deb
-Size: 1734
-MD5sum: 534016e973f4d601a0caa3280cca9f25
-SHA1: c82d280a8cc3b58b5e99d0f00eae157df9a7ce9a
-SHA256: 9b20cabdb042e24ba2860dc2604b9413f30dc403e269d829fe166bea72962dfa
-SHA512: 501e7689e1ea732cbc9fa0b25cf39a23965026f4c133cd69891a97fad76df3dada5e9c11637d255c454881d242872b29f4d0c1c04f050ed05b639c9ce15f754c
-Description: Site config: MSF - Kissi EMC
+Filename: unstable/buendia-site-msf-chad-bokoro_0.16+b1065_all.deb
+Size: 1760
+MD5sum: 99119d2c97d38e618bef4c8f404d9dd8
+SHA1: 1004d1c6f9537f51a16d03919a32b50b75f96a7e
+SHA256: 7aa3cdbeb55f2f036cd9cf920417200c03364a27d4da201300ebc3fe7b16d594
+SHA512: c9268a47d0d164238431f0a26c8d32d7bc8158d27c8d2ac0ef009dd5756bb0d318bfdc809e0789e9cdd40ec978d5da870bbe5ec5abf4b5c94c6a3857aea467e6
+Description: Site config: MSF - Chad - Bokoro Nutrition Programme
 
 Package: buendia-db-init
 Architecture: all
-Version: 0.16.6+b1203
+Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-mysql, buendia-utils
 Depends: buendia-site
-Filename: unstable/buendia-db-init_0.16.6+b1203_all.deb
-Size: 13232726
-MD5sum: 4fe7734f4b91a5ef271ebaf33fd71345
-SHA1: 72d25ed8c4ad8d3476be9c5fb5e377d0125d15fe
-SHA256: 792731074b4a1f3b9536b9aaa020e1eba1a521879af59dcb7362546b07395852
-SHA512: d1e602aa24b9aa01df546791b40663d487e8f01f816142e115aa6819c567a4941c2fb29e60dce285831f70a4be4f7df7aba07f91ab8a5de1464d385b3e894258
+Filename: unstable/buendia-db-init_0.16+b1063_all.deb
+Size: 13232900
+MD5sum: 21d1577fa31f0ee2e2908633f9ac6d01
+SHA1: 27e9679f9dbd1c4b28d3074e614eb95cb25203ec
+SHA256: d317566b07034ca64f6aae0005182b36bc22bbf33ed8299b3b51d80b41ea6f3f
+SHA512: 3bf450126de5750b50a33ad2596b88396d115546ab5bc0ee486abf1a73e140e8b9160ccfc99d165110f68e1ae47c5127a6b7b16e94055e2ab776ad03673c50c9
 Description: Initial data for the Buendia database
 
 Package: buendia-db-migrate
 Architecture: all
-Version: 0.16+b1065
+Version: 0.16.6+b1207
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Filename: unstable/buendia-db-migrate_0.16+b1065_all.deb
-Size: 1598
-MD5sum: 13fb1b78be28a38d87cec1d2fcc7df6d
-SHA1: dd1b3727c490d718314becc09568b29317f3fc69
-SHA256: 23a8a1bf8d998f98042b38f1ce10e8d94022ccbd16e7751e81bed38c1383c2a4
-SHA512: 82e12e535cbb716b9aa2f8d0fd973df0545f939dd81634833015f4288ee7e2f89689f4818dfc8f8836854a90eaea54aa29a45de7e7476a454e87171b18db8319
+Filename: unstable/buendia-db-migrate_0.16.6+b1207_all.deb
+Size: 1606
+MD5sum: 93617f439639105420a2d792cd80d1f2
+SHA1: 07775f92da02a2a7ebbe2d56e40cd8737ec76f03
+SHA256: e187a0e7dcadb7a42f87f28848f501446175e98e858ef76537bc36ba4f42e30d
+SHA512: f4747b76a943c5da28bfe11930d559ddb3a55e0c2d9e2ae9e4cce5903954c6e7f8af903dc1179db1a38706506876807898fd7b167a4a04b23995803b02693be4
 Description: Migrates a Buendia database from version to version
 
-Package: buendia-db-init
+Package: buendia-server
 Architecture: all
 Version: 0.16+b1065
 Maintainer: projectbuendia.org
-Pre-Depends: buendia-mysql, buendia-utils
-Depends: buendia-site
-Filename: unstable/buendia-db-init_0.16+b1065_all.deb
-Size: 13232782
-MD5sum: 9595ef00a29d92e19ce154a4789bd102
-SHA1: 910f5a5bc219ef6ce7440f8b3f8d6aa25ff21a7a
-SHA256: 99deda98ef2623b2f54c7080aae2432829176d52a54442aaba16a994cdcb4d23
-SHA512: 8da0757fcdf6ad106f84b306d5a4347f473aa47064ef071d1e60d0aacceea31f4603391d1de7cc7240c5d5420838cca7c7eda652163c7ceb6fe503db7c31a664
-Description: Initial data for the Buendia database
+Pre-Depends: buendia-utils
+Depends: buendia-db (=0.16+b1065), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
+Filename: unstable/buendia-server_0.16+b1065_all.deb
+Size: 4427430
+MD5sum: db89fa332eb7ca6b9c78ff58a25a1e9f
+SHA1: a07c6664a55d6a33e3e811f628f0f10c6654b456
+SHA256: 93f059a026f495aeb840454d2f31d3f03ff8aa822bee02da535cd3599a38979e
+SHA512: d86b84bf5f9edd8ee4f49551f66088fd52e7137a82f2072632327ff834d779cd1e21d28fb6ace182cee12cd2baca92f1972ab4dc1e08d488dc30c2ac8d55e960
+Description: Buendia API server (an OpenMRS module)
 
-Package: buendia-setclock
+Package: buendia-ntpserver
 Architecture: all
-Version: 0.16.2+b1118
+Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Depends: gcc, libc-dev
-Filename: unstable/buendia-setclock_0.16.2+b1118_all.deb
-Size: 1992
-MD5sum: 0802d17e40af5647d36e8b4f64e0a553
-SHA1: 391ee0bea2cbfed6f93f46ca99ebde7b58da8b27
-SHA256: 29b5bbd5dfe7e41bf961620d97fa94f088fdd1f273b6570f3f2d58f6613955f1
-SHA512: 6e7ccc0071acb4f4d08b619cb09b0b64d5fa9d77ecbee8cff29b5b70fc5f77906c7e3df13506c9a8f85fa013906bbee6098c3df60a1656c5c91d2c5f52391ebb
-Description: Sets the system clock to a specified time
-
-Package: buendia-site-test-integration
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test-integration_0.16.5+b1188_all.deb
-Size: 2274
-MD5sum: e04ae7fdc018f1502a538ecc0db36176
-SHA1: 607f18773c2d713e6bb07c02d106d7beb9f512f2
-SHA256: 56e1a258cf0fc387fadae67226498d10980f36f89dcd0e02435c0dd8d50b7aa7
-SHA512: ed18a2a2ec4fce97070d63ff7f4d3e0c9e6646780206dcc93a0cfda74a25bf5d4ceee44a78685b9ceeb3dda3a23b66a9860b54c255111bfba51ffdaa4dfae8c5
-Description: Site config: Destructive integration testing
+Depends: ntp
+Filename: unstable/buendia-ntpserver_0.16+b1063_all.deb
+Size: 1852
+MD5sum: 6c0dd0bd577d4410ca14a06dbf851c49
+SHA1: 5ab967432511b964ba4d0e74f2c0c089d2089e61
+SHA256: 086a47ad38fbbf3ea3fda74f38d49649a42a7e9cc737127076cc9638cc0deea3
+SHA512: dcb2e5b61f06ab69dfab82091f091c3f7f1502efb3722c1a8670116ed1044343853756ca07dec708c179edc26a193b12405dd95c3701dbee8cd108f7570a3b77
+Description: NTP server configured for Buendia
 
 Package: buendia-dashboard
 Architecture: all
@@ -633,132 +168,20 @@ SHA256: 091a6d67168dd7ae63195f70d8656a466b6c487976a53a21cfcd895d7534f884
 SHA512: d2c98526dcc322d61443316ce1cd1fbcf0a4af97414db3b65dd580433a6433bbaa2d3e902d62d7212ba908058b546f2406dd3dd919a5dcccd4703c2f9679eac5
 Description: Serves a system status and administration page for Buendia.
 
-Package: buendia-server
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-db (=0.16.6+b1203), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
-Filename: unstable/buendia-server_0.16.6+b1203_all.deb
-Size: 4426648
-MD5sum: e1cb221c2712618dfc6c022cfdbcdaaa
-SHA1: d62a6d4d4ad49eef792c0d4c292fee1b0df0cec0
-SHA256: 631aa1b80fd3098453d771d350042f26f1bbf0b5113b5e4ca1a6c60af714bdb3
-SHA512: 6dae3acc0662d8126c88eb086fa31f5e7a7c29d0b94a115a444f74f3b95af6835853f73304240ba397d8f44ac3eff4df0c3afde82efde5ad5d523a836a7dca2d
-Description: Buendia API server (an OpenMRS module)
-
-Package: buendia-sshd
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: openssh-server
-Filename: unstable/buendia-sshd_0.16+b1065_all.deb
-Size: 1788
-MD5sum: e8f7176f173d22f8e33f8d8fb231e1b8
-SHA1: 8c73688df2c6779a8a1782d4cf55506b43f8ccc4
-SHA256: 5e86f6a389ecf1518b216436394f0919a8a4b5010d226bc4ec08211f9de0399e
-SHA512: c1fcfebd3ca66f130e944d43f186600a837d54bd2d5982c704bfd6f158fd14d1c6908528b016d7c04b4d91a223b636ef45601f313f53e45108d60993d699f91e
-Description: sshd configured for Buendia
-
-Package: buendia-site-test-integration
+Package: buendia-site-test
 Architecture: all
 Version: 0.16.6+b1207
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-test-integration_0.16.6+b1207_all.deb
-Size: 2276
-MD5sum: 38c1a0f93a4262b82a35da16c8f8632f
-SHA1: 258e38be9f58c6ff1070b2c58205f1070435879f
-SHA256: e7dbf8d47619756ea2483e48b8b4fd63bbd7713a26b3518be930c49516d2d37a
-SHA512: 4ee0825fb7ddf49eda0eebefda96dd81af56ba53fe79622dfacbae1cba8f0afb71cd96a8a24fa9b5fc4e8c3fc7860d2fc77cdd84e0c5cbd5ba8057c11d0905bf
-Description: Site config: Destructive integration testing
-
-Package: buendia-backup
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, buendia-mysql, cron-daemon
-Filename: unstable/buendia-backup_0.16.6+b1203_all.deb
-Size: 10450
-MD5sum: fe6c01bf64f1383d2f070c27dac529c5
-SHA1: 57e3827e1e1a553e28c45b986bd471538f7f0858
-SHA256: 45e50a4dda78e1f010ebb176d15e37271bace123c8229777e14b2fc91ae92b54
-SHA512: 60b9c4ecd5693304ee7c11c800c46b3c395b2d9e408176523685bf1bbd3a7f5ac2a63a61a0edd0a326140ba8c08102edd0bc885b7af7ea270c367270d2234663
-Description: Backup and restore for Buendia
-
-Package: buendia-update
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, util-linux
-Filename: unstable/buendia-update_0.16.5+b1188_all.deb
-Size: 4788
-MD5sum: c6396b7c8e1d92846d2db09325a96a32
-SHA1: 5ad069b517e3e9932651b48c5a54ff7c0adb06ea
-SHA256: 37bea792f6d6fa4d6a76663ec8d218b7d8dd6335dc586073204cf149bf2cfc56
-SHA512: 99f3961f94fc9e82d617987531eda9353016824d51a53032ecc8949d6b483e830727990abed845f35876f6fceee0658e3e9c8017629cca045c8bf43230a8b5ae
-Description: Keeps Buendia packages installed and up to date
-
-Package: buendia-db-migrate
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Filename: unstable/buendia-db-migrate_0.16.6+b1203_all.deb
-Size: 1606
-MD5sum: c755a878b5713ee30747f0c44c0f4abd
-SHA1: b61b8bca49223bb91e08112134d691b96d0140a5
-SHA256: 1a1f6725195aae454f9f888e8c7ff8dd92a59a910b1b1e7f97239a72205c504c
-SHA512: e57fd00ce8c51e636f1c7552c6ed60bb23385398ac0c679a3f1dab1c42d37f8ce616af23aa1d983a615d78114dc6019230448a0d63a76e5e9e2b02f5565200ff
-Description: Migrates a Buendia database from version to version
-
-Package: buendia-site-msf-ks
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-ks_0.16.2+b1118_all.deb
-Size: 1742
-MD5sum: 0b16a06b5b6b136e032119c1adc7f989
-SHA1: 3e5026b89595fbc70d9301fe3f8d44a16b680dd3
-SHA256: 7bc785d95b167dd26568b05500eec32fc07bdae5c46136b567c200de689f8857
-SHA512: 156be743c848e8de12c3623528b4f294290b9d33907710d45f6e29feb8299be08064980e18d4b474d2dee5a2abaee6ab810982e719b6081b006628137f27b14d
-Description: Site config: MSF - Kissi EMC
-
-Package: buendia-site-reference
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-reference_0.16+b1065_all.deb
-Size: 1828
-MD5sum: 37c0b78668541835f2deef8886fa6f1a
-SHA1: c91a60f65e7b21d9406888bf15192da33cdf3c6b
-SHA256: fd90206d076ad8cac20b6055941112b479acfa8ca8d17ab7f21a23807adf588e
-SHA512: 97f5086d13201a8bd8b42c0d8b1bc763f4958255d6a548741455dedfc499054f2a04e001e6f63f5e83b33608d7757a32dfc00af67ff0fcb016c97e99fff53591
-Description: Site config: Reference deployment
-
-Package: buendia-db
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-db-init (<=0.16.6+b1207) | buendia-db-init (>>0.16.6+b1207), buendia-db-migrate, buendia-utils
-Filename: unstable/buendia-db_0.16.6+b1207_all.deb
-Size: 1094
-MD5sum: bdbf4a69812f9b98164deccfa5e8788c
-SHA1: 7f9b8716ecb5941d096c53274fc5a72e36319e6d
-SHA256: 222d37dcdfcb1927856890ce3548b82070ec5b0dc24fd006060d36241d1809ea
-SHA512: 7e1529e392b2973f1007e03a54d0d9025d88becde55bbd5ff3565f4092b9ad136c97028c43d8c40c3b152c73edc13c21578ffc1282a8ed2b42716e13743a8f03
-Description: 0.16.6+b1207-compatible Buendia database state
+Filename: unstable/buendia-site-test_0.16.6+b1207_all.deb
+Size: 1766
+MD5sum: decb7d2e4cbcd47b537a1193d4d9d003
+SHA1: ddc8778445ccd94890a9bd30b37dab16216b68c5
+SHA256: 4157dc2c28e0ac4f251a4062e669c5f8b2e8e6ac7eeb58d0949edac1f6d5b28f
+SHA512: c18f526d19a6ec879abad834c74a81ad67eb5a2ab85d1abcfb21720eecf6926b2f6b723e9cc49d8da7d38977f0920316456d9c616ce43b827a0ff26e096579c2
+Description: Site config: Edison - Integration test
 
 Package: buendia-site-reference
 Architecture: all
@@ -775,19 +198,218 @@ SHA256: 15e2490a2a5bd75cfa6e90a4d03f2f1db07d6760b20c45fb4faf4045bfe2524c
 SHA512: 1f8f436b8d41e0df3b204b124ca1ab4f195f89e54da59e52f8afad6b85a9bdda6e7cb9660e23521ef93baead66a34441429ce63d4827fdc40de8698035cabdd3
 Description: Site config: Reference deployment
 
-Package: buendia-tomcat7
+Package: buendia-openmrs
 Architecture: all
-Version: 0.16.6+b1203
+Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
-Filename: unstable/buendia-tomcat7_0.16.6+b1203_all.deb
-Size: 5696
-MD5sum: 0f5f5f100db303fe38e315009202370e
-SHA1: 6f8a2d5c888d8b4b99c3f07dc0237eb8b625fa85
-SHA256: b7ae933a0cc48fd9f5a68c669e7d99d295f6ab4c472856bbfae2f4dff66e0f03
-SHA512: 4aec9a38a01b197620efb993ab4558ceafa71ecee0832f5b3d329e638e64cfcfbf3d619b4015af5c10e0d3842fcc330da01a5811e937154a282b7130dbeeb101
-Description: Tomcat 7 configured for Buendia
+Depends: buendia-tomcat7, buendia-mysql
+Filename: unstable/buendia-openmrs_0.16+b1063_all.deb
+Size: 36912088
+MD5sum: 54b5b7a0eb0675698de804516f061c83
+SHA1: d87d21e8dd9827ee58e0a1d5c2733c2445a0e2be
+SHA256: 94d231e6535917d42db63e549729cbf624b4616da34c8bc685f9e816cbea0b94
+SHA512: 40b8b2c68302f2c96388ef9912ab941edd13d7031c31901aaae071767faafdc95722dea531c0be68aeb6fba4aba0e30d60ae60b96adb329e15eacfb9a3ffcf36
+Description: OpenMRS configured for Buendia
+
+Package: buendia-site-msf-geneva
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-geneva_0.16+b1063_all.deb
+Size: 1720
+MD5sum: adce938679fbd322d7ade2e71a77feb6
+SHA1: 8a7be542f869d51d5c15315b7e9b49567c25e1bb
+SHA256: 6fd2f34d9a3fda01ee3e29fd49745832d32fc2acc105b694264a5dd18ce6eccf
+SHA512: a1e610ff36915cc5a4a1630c8c7116022508dae0e581b52f02da6fda848b2ab5595d0c1f03f6a64c0449968f0dfa9b1eb70bbb898a23b10988ab6d72e64a0143
+Description: Site config: MSF - Geneva demo
+
+Package: buendia-site-msf-mg
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-mg_0.16+b1065_all.deb
+Size: 1754
+MD5sum: 58a0f98738773de0c8326d89b71a1a80
+SHA1: 5f845ec9decbb623c56520edd6cb7e5cdab85ee8
+SHA256: ef367600172614da5969b6beec6f7f0696f4bd859de668cfeacf8c2eafefe63a
+SHA512: 6bfb4ea06e5f1f482bfb96f05b7009051e57983b0303c0727bf1c1de9752cff6c3b199b1d1c88cbec22345a07676fe493132ae262c6717e49c22f4b12a6571bc
+Description: Site config: MSF - Magburaka EMC
+
+Package: buendia-db-migrate
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Filename: unstable/buendia-db-migrate_0.16+b1065_all.deb
+Size: 1598
+MD5sum: 13fb1b78be28a38d87cec1d2fcc7df6d
+SHA1: dd1b3727c490d718314becc09568b29317f3fc69
+SHA256: 23a8a1bf8d998f98042b38f1ce10e8d94022ccbd16e7751e81bed38c1383c2a4
+SHA512: 82e12e535cbb716b9aa2f8d0fd973df0545f939dd81634833015f4288ee7e2f89689f4818dfc8f8836854a90eaea54aa29a45de7e7476a454e87171b18db8319
+Description: Migrates a Buendia database from version to version
+
+Package: buendia-networking
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
+Filename: unstable/buendia-networking_0.16.6+b1207_all.deb
+Size: 6988
+MD5sum: 16bb7c3e25cb34ccd0e21548f2ad5db7
+SHA1: 2769e4dc1b022a7b82d57e041a529fac78fb094d
+SHA256: f7808dfd8ee5597b110524db79436b6c43eef2297ae5c911a6a34ee2556d4bdb
+SHA512: b61ee68593339a92b28ba200cca744d1866ade0eded61e92faa990ee24e32beb93c8902046043bc075163ea046ddd61fc16fb457120d194492afab71bdc3873b
+Description: Wifi AP and DHCP/DNS service for Buendia
+
+Package: buendia-setclock
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: gcc, libc-dev
+Filename: unstable/buendia-setclock_0.16+b1063_all.deb
+Size: 1990
+MD5sum: b1ab23f5f17506878ca436a19401f3c4
+SHA1: 9271c8b2701251cd7fa558a13cb12de53e209cbb
+SHA256: 64cd356ce434797252ecf0547f5390e4c22e445c6857d5327047d3e1d2af833d
+SHA512: 1fccc796d4a7cc197fb9ece014adfaa9fe14cd29a8d0d22220ae657e1936eb35f67c55bd78a901721d134224f35e418d18a48359407027f7182eb660918f6dcb
+Description: Sets the system clock to a specified time
+
+Package: buendia-dashboard
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils, buendia-server
+Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
+Filename: unstable/buendia-dashboard_0.16+b1065_all.deb
+Size: 8142
+MD5sum: 214538e21f23040d3123e92d586057f0
+SHA1: 68d6649bd441c219de9f2cf7f48abd7c5df31b91
+SHA256: 195fe4b5ca9b836b513a8639b77a7eabb46e1e7c572e1f13f1556f8de9d2eb15
+SHA512: 49956050491a263ec2959bf88062a9d6bf22951aa891f253d0cbb66b5ecf699918625e2005a1cce6277bca88ea60e897d75b4c31f803d38d1c5a49adefbd54f5
+Description: Serves a system status and administration page for Buendia.
+
+Package: buendia-site-reference
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-reference_0.16+b1063_all.deb
+Size: 1828
+MD5sum: e70ada2161b2b12920def5b7298bc7d7
+SHA1: 8e5d113780ec506e87806ae2beb41b73f85f5c17
+SHA256: 637c035dbcf2d63230b05f1fea59073bb25d38dd7adbddd8a4e5a2e3c21da2ae
+SHA512: b51b9ccabdda7049b1c705bae413ce5977fb8d00046ef86a623995445ffb85e1ace540802c74a529c13e514a69360f6eb3b970c74902bd7aea368a8d271578fa
+Description: Site config: Reference deployment
+
+Package: buendia-site-msf-mg
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-mg_0.16.2+b1118_all.deb
+Size: 1758
+MD5sum: 8b132c54434e0984f8763899febf8c51
+SHA1: 27611bf283c3b0ba0d788fb4d1036868383dafd3
+SHA256: b6fe61ed4de7d0e7a018b374f5e881c4c54d448a0e391d3b06a55320490c58e5
+SHA512: 035a25669cb74bbb955465f68f70725bebc0881fb4c4c9822f75f943b8109c5705cf34e0043c66b851df3c68c06fe2c3b38aec8398c5dbcd8eb38d40c791d792
+Description: Site config: MSF - Magburaka EMC
+
+Package: buendia-site-lon
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-lon_0.16.2+b1118_all.deb
+Size: 1764
+MD5sum: de2554b13707a19821de0879f8d42479
+SHA1: 85561f49cd6358ce16a1c230b869f5ec0c384f58
+SHA256: 30c00e6cc5fa3e8c26da2428592cd051bd1af1d3b8444f50099c25e3fa155ccd
+SHA512: e65aead45ec3570c7da95c2f64f09422e6ecb41d7385b4bd6d9161f375e9ea0e6d0a9ab4af2b510bdd1a596a856749ebcaba4b85136c0d3e803e01e7a7ef3a5a
+Description: Site config: Google London office
+
+Package: buendia-update
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, util-linux
+Filename: unstable/buendia-update_0.16+b1065_all.deb
+Size: 4232
+MD5sum: c229d06ec454f3b94bb7c63ae89409b2
+SHA1: 925352b461f60ec3cb36fdd586e46764f3e2a24e
+SHA256: 9ca6d5268df4248f75f4acdbf5a1c6aafba56d5b75b4bb4c91fa1702ec38311e
+SHA512: a172efc0e2c387c2217044d6ba333ecdb931dacf54155cbccf57b181ad856b992e3863c3bb146e745c92e7f67ed32ccccf05e7df3e8a23f2e486abbdade1bfd8
+Description: Keeps Buendia packages installed and up to date
+
+Package: buendia-db
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-db-init (<=0.16+b1065) | buendia-db-init (>>0.16+b1065), buendia-db-migrate, buendia-utils
+Filename: unstable/buendia-db_0.16+b1065_all.deb
+Size: 1096
+MD5sum: 8b6852abe13f762a250c70dbe8db8c55
+SHA1: f3efbce0bb47b315ec7f4d0cabeacf4e37c1930d
+SHA256: 76b9b6c46acebae4a364552098a6f1af15a8f42a36cc710749fed96c1d2a9f68
+SHA512: f7352e82a1266cf6311a34dd02f2f6595283363c6145fde2e2ac8277027e59d3bd8b2766990a6635d5892abe318c8b723627ee90b5051fe0d1986c4d057cfc0c
+Description: 0.16+b1065-compatible Buendia database state
+
+Package: buendia-mysql
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, mysql-server, sysvinit-utils, unzip, zip
+Filename: unstable/buendia-mysql_0.16+b1063_all.deb
+Size: 4138
+MD5sum: baa11d5bfd13283932ebb2dacf71af9d
+SHA1: 0916cc40262b65058ac452c52bda50c42391edde
+SHA256: 08d6a981fedbe67dcd7baf9ebcc9a3748b3b729de7c89e4ac683e5a1a020afcd
+SHA512: 9e41d65db01f636a1d8191f56244e047d8ea1d6c7502e24c098210041894c8f061927bb114de0b3ec611ff68594c6b7da06df0e463c5208799fdef76f9ff89b5
+Description: MySQL server configured for Buendia
+
+Package: buendia-networking
+Architecture: all
+Version: 0.16.5+b1193
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
+Filename: unstable/buendia-networking_0.16.5+b1193_all.deb
+Size: 6976
+MD5sum: 70f6a8b8d28b627fe0f347469edc6fbf
+SHA1: 41297d9aa77f610f0d9e09685945bf100a632062
+SHA256: 6f8d20d1606b119fda37e55b1e1e65689314f01e11903463a39497e29bd06904
+SHA512: 54efcff1e76eb96a6f21aca63b059ae170e013edfaf01dffb95175d3f6edc2f326e8265dbba9f946c0636f84344f20ea7132c11ba4883a13fbb78cc1a6ca2575
+Description: Wifi AP and DHCP/DNS service for Buendia
+
+Package: buendia-setclock
+Architecture: all
+Version: 0.16.2+b1110
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: gcc, libc-dev
+Filename: unstable/buendia-setclock_0.16.2+b1110_all.deb
+Size: 1988
+MD5sum: 497ecc70024de78f1c8a8b844b2b1b3a
+SHA1: fb04e630928621e61be80b1ed7e89199fcd8bdbb
+SHA256: a94fb1c323cd69702ff01612299066d4b2254376d2a9b6f474d3bbd359a7d53b
+SHA512: 17ee83d37684d028bd16b2c06596b45b19299c9b4cef605babcc13fc7c154ec06e52c9359c31b5f13059752cd777f4f7ea670953e6a7cc0d852114e52741d541
+Description: Sets the system clock to a specified time
 
 Package: buendia-site-dev
 Architecture: all
@@ -806,46 +428,102 @@ Description: Site config: Cloud - Development
 
 Package: buendia-backup
 Architecture: all
-Version: 0.16+b1065
+Version: 0.16.6+b1207
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
 Depends: buendia-monitoring, buendia-mysql, cron-daemon
-Filename: unstable/buendia-backup_0.16+b1065_all.deb
-Size: 7844
-MD5sum: 2c8139a6ed368c94530fc798fc3cf9d1
-SHA1: 2c8ec748150992649e427d1dc17b5d3f1c3a3f5c
-SHA256: 5f6e5c20ed2f5660beb67eff99df15d2f058a2d1785fedef4004dd98ba27768d
-SHA512: f079c9b393989dfdce9168cafc517fc2a78cbd9fd53ff15036c17b35ae272bd17ac2622fdb219c19f0e1794c856491bed332f144c905d75a61c8afb939654970
+Filename: unstable/buendia-backup_0.16.6+b1207_all.deb
+Size: 10476
+MD5sum: 760fa2e34c296df1dbe8fa9908f17918
+SHA1: c6489ec1b7dcd6f937160a4d9bb1e6f5f5c65e55
+SHA256: 3b8beb92e543562309b7368072699cc1070981146bc9f53b2b89b6fd4ea8a2ef
+SHA512: 1c1c8e884bbdac01d0ae0483b0675837e33da924652b04578fec567e0f6d1244d82795f64ae02062e3da9e4754c08f3c2010de633ec9a9f8d73e261b3452a1f9
 Description: Backup and restore for Buendia
 
-Package: buendia-openmrs
+Package: buendia-pkgserver
 Architecture: all
-Version: 0.16.5+b1193
+Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
-Depends: buendia-tomcat7, buendia-mysql
-Filename: unstable/buendia-openmrs_0.16.5+b1193_all.deb
-Size: 36912030
-MD5sum: aa9f684cc12f2cf02dc29e6176772efd
-SHA1: 691b94c804945d2bcad5da2b66dcdb5a7d90acdf
-SHA256: b7d19b543d0365afb036dd43733ee2580649c34c7ce1b02fb63da4449629605e
-SHA512: 16ce1c508d1007a5f691460c35aa9ad5e7b27c020699b9ff597428f017f6c6a984457394f69220a6769e8be3fc3c87f21d843f13c171d2208afcef601aaf23ca
-Description: OpenMRS configured for Buendia
+Depends: nginx, unzip, python, apt-utils
+Filename: unstable/buendia-pkgserver_0.16+b1063_all.deb
+Size: 8192
+MD5sum: 300fa48508a61d5292a976a90be3d5f0
+SHA1: f3f8b7407a47298d3568425630548f9a2aa086bc
+SHA256: 668faffcea24eb3baa6bb4535544e3523f35fea9ca2e69c2cb9dfeecc2a0839d
+SHA512: e9e7b0d8475e869d8ea25fee15a85704f486346eda4c87ddc3f45db9e6aef06487c2d7bd6eef72de993f7d767b2ab904006cde890b7da4328fc1679b5eab4080
+Description: Serves up Buendia .deb and .apk files
 
-Package: buendia-site-test
+Package: buendia-site-lon
 Architecture: all
-Version: 0.16.5+b1193
+Version: 0.16+b1065
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-test_0.16.5+b1193_all.deb
-Size: 1776
-MD5sum: 9a097a83fc0acc06ac89e2cd0f05427c
-SHA1: ad3c99c93141131765a4e1523ae57f392dcbcbaf
-SHA256: ef7210dadadf0b300589d15b8f501da07439c68b4f9badaabc511b5dadef7ff0
-SHA512: 79642d2bb060e4f19767b5ed9d24366aa37aec2f6b04bb0fcd7114acdb664a0fb28d0353b89cb0cc7d1e9a4ba91300e8efe35e390da4d3cea57c8d3183ea4d01
-Description: Site config: Edison - Integration test
+Filename: unstable/buendia-site-lon_0.16+b1065_all.deb
+Size: 1758
+MD5sum: ca99e7736106d3e6e5ff26b0be42c10e
+SHA1: 87238938b09a461b9b1e1fe794406038852996e7
+SHA256: 787e1cb36aa8430901bf3513c75e090eafa9cad27b64053e7e7ae9f257608f48
+SHA512: 13ecf71e999c2173707415a3b74502abc49dee6be09201845ece5dd9f9b3370a1225b959ec3e5f773507afc06a7d25e90f6478c3866556773336097ca3f15ffb
+Description: Site config: Google London office
+
+Package: buendia-site-msf-geneva
+Architecture: all
+Version: 0.16.2+b1114
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-geneva_0.16.2+b1114_all.deb
+Size: 1728
+MD5sum: 5b77249c9e43f2f2b03dce15eef2e3aa
+SHA1: 4689cd326ca9e498a1560aa0c086f812249ac591
+SHA256: b45ced00ecd1306f086d28a7bb8343894d78c5226f7dfa9e3a30b9eeee556d5d
+SHA512: 744013832db4326307c7b03c68538bb55fceb7ec150176c34990f3d0e6d6f572ffcae673fb643ebb5e9b206bf51cba1060e93e14545f84e60d61a4c8bab35e64
+Description: Site config: MSF - Geneva demo
+
+Package: buendia-ntpserver
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: ntp
+Filename: unstable/buendia-ntpserver_0.16.2+b1118_all.deb
+Size: 1844
+MD5sum: c4c255e596bddbc3af5368714c15dc24
+SHA1: 55016115e6e7b4b7e2c1d4dd6827258249cfd6f7
+SHA256: 33acefab086befe8f5131320b3cbb7836cb0e963b20f6ba9bbe330f5440a0f93
+SHA512: 1fdd070d385b302002ed0ba7089a1c1f666d3e8160f37ce3d54a30905c33f7fac8caf794e960f15f54f17e7524d73092aa4e214c9d9b6d230a305cf3b9cd4303
+Description: NTP server configured for Buendia
+
+Package: buendia-update
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, util-linux
+Filename: unstable/buendia-update_0.16.6+b1207_all.deb
+Size: 4786
+MD5sum: 63059a129e56c5967b1223b3d75ea392
+SHA1: d5eba321abc09b352cca5b56ef776339beb7958c
+SHA256: 4b1bb77ce06b38fd1fb05e47d1c6a46d67fc023b2bf7133fbc10cba1c36ca2ad
+SHA512: d166156859387d02f01a235ee0324906298b648d67dbf3ccc557a75a364d4b1627abfcfaaa9a4f76449c8d820f971e1e7d224329501acfd4f1452601226fe475
+Description: Keeps Buendia packages installed and up to date
+
+Package: buendia-db-migrate
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Filename: unstable/buendia-db-migrate_0.16+b1063_all.deb
+Size: 1602
+MD5sum: 382731e7d1194a896f2f3c273d93f936
+SHA1: bbbcd060cde95f4454904a54d0520fe674546bad
+SHA256: 459ca1217cf2ba29dfb13fe7e7324dd2b58b47bd3728d3e8ad302bbb5d12b385
+SHA512: 959bfe3291c0492af4ea92f037870f524828e324368a56164c3228b585bf03849d56fa4c618526792c3f07b59cdc2a64efc5c7d4922069536ac3ae9b6229fe98
+Description: Migrates a Buendia database from version to version
 
 Package: buendia-update
 Architecture: all
@@ -861,91 +539,178 @@ SHA256: b1b7903c9737670a766f3dc7183c8fa20e3e3a6062e2c98702868d865460d36f
 SHA512: b47d0735f43800c9a6fc460d4490c2fec5659b3126b9e32e0c503d3e19a2ea4c5778e820cb8a9d95f4c876eb1408d7e54be11f989098bd22fda178bfa728f31e
 Description: Keeps Buendia packages installed and up to date
 
-Package: buendia-networking
-Architecture: all
-Version: 0.16.4+b1178
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
-Filename: unstable/buendia-networking_0.16.4+b1178_all.deb
-Size: 6988
-MD5sum: e968020324a66e564fdddf212a35cfbb
-SHA1: 5d08a4f0d22e4a56204510637b039b6382af31c6
-SHA256: 40d573bd8f11e87f02284768dcd9af17f2886c02cc25f016a5599278daf8b93b
-SHA512: b46a06606c221137f7bc8aa6067274b4219af485ebab5a751fc9f778d816e8cfd88e6f383db108cb1b534c28dfcb7215ef106d11c3f4793862b38e63ab5c7f06
-Description: Wifi AP and DHCP/DNS service for Buendia
-
-Package: buendia-site-test
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test_0.16+b1065_all.deb
-Size: 1768
-MD5sum: 116715b4619d22b1ca640578c7bcf440
-SHA1: 0dbb8b9081fea68e69f993b35610a496a28e0b36
-SHA256: 4352f5aa2fa4f31ddeb0b960201b59929c7f4710ea35d7a78cdc27707ba1c165
-SHA512: c4048aaa6f6581cb81241802bcb2689ee18325bea1f3ea7fef072a8302f92ecf617f4919b669e49394ec111ac06d3dfe88bea2fd2b2f1b5abd321aa47716b2de
-Description: Site config: Edison - Integration test
-
-Package: buendia-site-lon
+Package: buendia-site-msf-chad-bokoro
 Architecture: all
 Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-lon_0.16+b1063_all.deb
-Size: 1754
-MD5sum: 188dcc51feb602e9a1b043a674c3aafa
-SHA1: a7e783abdd60eec72adeee4e33147529f8fe063a
-SHA256: 8798b9a216b511332f702e2c666d516e864561628d6b0709d406009872a9dc20
-SHA512: 11fad6d5e8c6474cf91d38663dba46ad7dc0d497aef181210e19456ff135c3847651477f4f251ed0e5f67d9c8fe13d4b2d5cb75ba5042020e251e6d70f4d0b98
-Description: Site config: Google London office
+Filename: unstable/buendia-site-msf-chad-bokoro_0.16+b1063_all.deb
+Size: 1760
+MD5sum: c1d83553e0fce4a20a508d2ea130732c
+SHA1: 56c1e8e346b210b5a638d60eb991347bcfb6926f
+SHA256: 9b911051aca425fceb556347162627498ec7478cb642b4c3e188d695c69f13b8
+SHA512: d93134968402f9f12ad7ec299e984af4d1db7adc12c96d6c4235eb233f1b2b5610f480256eac52eabd7af0621ba5dd044d98b50794947334ec5473f1fd39b8b0
+Description: Site config: MSF - Chad - Bokoro Nutrition Programme
 
 Package: buendia-monitoring
 Architecture: all
-Version: 0.16+b1063
+Version: 0.16.2+b1118
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
 Depends: cron-daemon
-Filename: unstable/buendia-monitoring_0.16+b1063_all.deb
-Size: 4496
-MD5sum: 1b6a3ebce115921fa022c53e9684f841
-SHA1: ae9ccf84df21e1c438cd007c2d203b7efdf2cd5d
-SHA256: a14b5401dafd64d9a7b26bd7d27a324044e915aa5b63059c790a67342bbaaad2
-SHA512: b372c5726a52fcdb2f02a2e3a8b11a6493786adf0aa6f67c8e8430ff8411324bd091940e37072f5f29be487aeaaa901cfa5ae80ca8479e900e5a5bf3a42628cf
+Filename: unstable/buendia-monitoring_0.16.2+b1118_all.deb
+Size: 4504
+MD5sum: 312beb0f99e9278e2a3e8ffce08d0b07
+SHA1: 1af1ee87383787a3afe069134703c51bce840973
+SHA256: f49d5082bf6a25a78f480158c69f8966db45cedaebb5c63c5f872e74c313d9f9
+SHA512: 4acbfdd7c6a75a76a874ec482b7fd0a2cfcf516dd45818357f97571e3a43d89bae0bd405e78e6d75816e6fdfeb10f5ae934d1914b8bc982469631c5ff991eb2f
 Description: Monitoring and log rotation for Buendia devices.
 
-Package: buendia-utils
+Package: buendia-backup
 Architecture: all
-Version: 0.16.6+b1207
+Version: 0.16+b1065
 Maintainer: projectbuendia.org
-Depends: coreutils, cron-daemon, curl, perl
-Filename: unstable/buendia-utils_0.16.6+b1207_all.deb
-Size: 13870
-MD5sum: bf1e383b06254b08bdc437a3ecc73221
-SHA1: e10aebe203637c73f1b8c54245d0545c6f40fa8f
-SHA256: bcfaaf6e547162b313af501b199f9272581eb16a5d67d7c3c1baf75e2cec46e8
-SHA512: 408ec3ae0a250591d13259b533da0df52c725765fbf6918ff9450476d684f847c2465fc38f4dd72e221824730ae534ff372bbbade0bc3b84e79b4ade2fb0ff34
-Description: Utility scripts for Buendia
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, buendia-mysql, cron-daemon
+Filename: unstable/buendia-backup_0.16+b1065_all.deb
+Size: 7844
+MD5sum: 2c8139a6ed368c94530fc798fc3cf9d1
+SHA1: 2c8ec748150992649e427d1dc17b5d3f1c3a3f5c
+SHA256: 5f6e5c20ed2f5660beb67eff99df15d2f058a2d1785fedef4004dd98ba27768d
+SHA512: f079c9b393989dfdce9168cafc517fc2a78cbd9fd53ff15036c17b35ae272bd17ac2622fdb219c19f0e1794c856491bed332f144c905d75a61c8afb939654970
+Description: Backup and restore for Buendia
 
-Package: buendia-site-test
+Package: buendia-site-cloud-demo
 Architecture: all
-Version: 0.16.6+b1207
+Version: 0.16.5+b1188
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-test_0.16.6+b1207_all.deb
-Size: 1766
-MD5sum: decb7d2e4cbcd47b537a1193d4d9d003
-SHA1: ddc8778445ccd94890a9bd30b37dab16216b68c5
-SHA256: 4157dc2c28e0ac4f251a4062e669c5f8b2e8e6ac7eeb58d0949edac1f6d5b28f
-SHA512: c18f526d19a6ec879abad834c74a81ad67eb5a2ab85d1abcfb21720eecf6926b2f6b723e9cc49d8da7d38977f0920316456d9c616ce43b827a0ff26e096579c2
-Description: Site config: Edison - Integration test
+Filename: unstable/buendia-site-cloud-demo_0.16.5+b1188_all.deb
+Size: 1610
+MD5sum: ba5cdb292130a4361c2050126bfd2749
+SHA1: 0a7d095535565baf48e1f6b5c4850efe72d7acac
+SHA256: 2fc118e4693d06895c546ee7f9f0bba72eb0675ba750b0033ccdaaba344eb9a9
+SHA512: ecd17aadc44d32c4678437395367ae729b0683dc20ab3a035cfddb811dd7b6e7205c38b7a747342ae8b6b9cdf125a27540232541fc7ad46750407e5cf132efbb
+Description: Site config: demo.buendia.org
+
+Package: buendia-pkgserver
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: nginx, unzip, python, apt-utils
+Filename: unstable/buendia-pkgserver_0.16+b1065_all.deb
+Size: 8194
+MD5sum: 209fd0fd2e9a5f80b322dab1dba60031
+SHA1: f8997a43c0cb9ba357496af2093c630744fe832b
+SHA256: a99a7153d7366f160c4199d494f359d5069843717be9284beeec90be3c10c7a4
+SHA512: 1afe64e6e7c0022d02c5a5731e2c46272f3d8a0166a7a4240f915bf673b0ee731025b6171c9a713fb9092df262c0db8c3df4e7b47564c27ee2ba2d34d4cbabd6
+Description: Serves up Buendia .deb and .apk files
+
+Package: buendia-utils
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Depends: coreutils, cron-daemon, curl, perl
+Filename: unstable/buendia-utils_0.16+b1065_all.deb
+Size: 13950
+MD5sum: 3fc6b20d3ab315e2649daa49fb3d6465
+SHA1: 81b95bf5f60974e73db3b91ce217982a3b6cdae8
+SHA256: d6044546f7da3630c0128f9a498a5afd34edc8e03a93a63285a13edf09bf1de3
+SHA512: 250bb7a56674eba5727d05a16b2cfb6621fdb49b8085fc22c6aa281314a633e8105a08e6ac0806dfc069fe67a2784b51742b9b1e6a8bc1070ffcbcc0054c91ba
+Description: Utility scripts for Buendia
+
+Package: buendia-site-demo
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-demo_0.16.2+b1118_all.deb
+Size: 1728
+MD5sum: 50a9c342817d134b6de2404f4b704e50
+SHA1: 5f658dcfdbaf5728132094c2a587d4bdc79e0cec
+SHA256: 331f115471b8bc2e3f2b47c9c70ac1bfed891f5339ab963da58594f7202c74da
+SHA512: f765c5e9801eb98642603508ccc7d304f6b99cfa80dc9c9a152f5ade6f15181e4ae5f5501c5b684a58354573b5b47159b2717158552d6904ed6b2eae1f41f173
+Description: Site config: Demo
+
+Package: buendia-site-test-integration
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Depends: buendia-dashboard, buendia-backup, buendia-monitoring, buendia-server
+Conflicts: buendia-site
+Filename: unstable/buendia-site-test-integration_0.16+b1063_all.deb
+Size: 2142
+MD5sum: c3882294b6d37d035b0931e5c619c035
+SHA1: 568b86083b1855fcb3db42781c4514a49d9491a2
+SHA256: f2c30fa6090823724ea5ad278ba23dab66856fba588a4543e36296bd7592c533
+SHA512: 56d010e2ecbdf3688f03cd34a4f886aa40ac32b70c78cc627d8e4b9195918e92eb959a34a3975d4c4d197678c26444ce3642c18cc26801960b0bef1c88ea368f
+Description: Site config: Destructive integration testing
+
+Package: buendia-site-cloud-demo
+Architecture: all
+Version: 0.16.4+b1174
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-cloud-demo_0.16.4+b1174_all.deb
+Size: 1612
+MD5sum: 857c643d9b858ee4a336e854e7d8a219
+SHA1: bd55ba6f9d8b32790c81a609f8187492ec263880
+SHA256: b6870fa6f66c270b47f2f2decd26c38230ffd25b8cd4bdc3f97db40c7412295b
+SHA512: 147930437855f5607166f5aada99b1da5f72c81dea053e3e10e3c1739abc35f4915e3015b2a537834133348ce96d9cc18f506f2a4253560d6eb949df42f9f15b
+Description: Site config: demo.buendia.org
+
+Package: buendia-sshd
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: openssh-server
+Filename: unstable/buendia-sshd_0.16.2+b1118_all.deb
+Size: 1784
+MD5sum: bf978473d12e8bbeba5f26ca728e46e5
+SHA1: dd1fc0189e7446faed154109fe21923356989dab
+SHA256: 366d4d13c19d81f274e8edd2fe66e06ff5ed89de27aaae20ab5213af6f8c4cf0
+SHA512: 1969cab5e8b462d524f2b86d7a9c63c667b2a0140bc9e200a11453945c5c0b1334024824cb36df72230a35d452ed39312e903c725157c15ad8332084c79c06ef
+Description: sshd configured for Buendia
+
+Package: buendia-db-init
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-mysql, buendia-utils
+Depends: buendia-site
+Filename: unstable/buendia-db-init_0.16+b1065_all.deb
+Size: 13232782
+MD5sum: 9595ef00a29d92e19ce154a4789bd102
+SHA1: 910f5a5bc219ef6ce7440f8b3f8d6aa25ff21a7a
+SHA256: 99deda98ef2623b2f54c7080aae2432829176d52a54442aaba16a994cdcb4d23
+SHA512: 8da0757fcdf6ad106f84b306d5a4347f473aa47064ef071d1e60d0aacceea31f4603391d1de7cc7240c5d5420838cca7c7eda652163c7ceb6fe503db7c31a664
+Description: Initial data for the Buendia database
+
+Package: buendia-pushclock
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: gcc, libc-dev
+Filename: unstable/buendia-pushclock_0.16+b1063_all.deb
+Size: 2016
+MD5sum: a57a5f75928b401117ffb756744b8a2e
+SHA1: 1f877768b24a3b01f9145899da17015ecea0edc6
+SHA256: 1515bbdcd528df99e5edbb7d5f0ec9ee87290018686142e8165fee7ab1ab6969
+SHA512: fee31ca4af549bbdd204cecb0497dfa71cb300dd78e45bc8d7129603bcfd6f433e628fa341f1d6177c19d3e6b9aa61193c1244514971a961fd475d0e6764e853
+Description: Advances the system clock to a specified time
 
 Package: buendia-backup
 Architecture: all
@@ -975,591 +740,6 @@ SHA256: 1d0da44d2d6a37f39644ba13925d86d70552a8e7ee81971eaa1f8a80ee8f546c
 SHA512: 31dc9a606aa54a6628b79da88354e0e1c5acd4e15fc05fe7796f8c9f83967b565f4fd3fb682fdf74b5eb9a2e809073df70ef1a9bad4977d9950f8f961fe4c3b5
 Description: Tomcat 7 configured for Buendia
 
-Package: buendia-openmrs
-Architecture: all
-Version: 0.16.3+b1149
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-tomcat7, buendia-mysql
-Filename: unstable/buendia-openmrs_0.16.3+b1149_all.deb
-Size: 36912830
-MD5sum: 5b746bbdf63d714ee8fa467c17c42bea
-SHA1: a219afba44f8a00cf2852bed0fc009bcfcd908d9
-SHA256: 010f03c291df3f6627dd6d8d5db9ed1ba58c6a185fca6339c0a5324129692720
-SHA512: fb1208d3b8d7d6206efa8ee553f25754a50cce1e7a7d6971e238e918b20d3243c7050c0e22000fb7605d01c08382007cbbfad0acc0531192ebb49a03a65faa21
-Description: OpenMRS configured for Buendia
-
-Package: buendia-server
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-db (=0.16.6+b1207), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
-Filename: unstable/buendia-server_0.16.6+b1207_all.deb
-Size: 4427270
-MD5sum: 98e6dcb3cd0465224603e14f13b96b02
-SHA1: 687833aa669286f8ecafca165ec2fcde783b6620
-SHA256: 7ce5b53986937def4b41da77a5174631f515b5ee76d88506e14e6b2c7c3842d7
-SHA512: 1e8afd1911275e982e852bba2d34009487b22a33b776d3da408f66480dbeb373516b48888bbd40a254842ecd4cff601fe7cd692c4122d8da174879fdfa3d4d74
-Description: Buendia API server (an OpenMRS module)
-
-Package: buendia-db
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-db-init (<=0.16+b1063) | buendia-db-init (>>0.16+b1063), buendia-db-migrate, buendia-utils
-Filename: unstable/buendia-db_0.16+b1063_all.deb
-Size: 1092
-MD5sum: 0d3d4e7c92cf78c223d80964819bdd88
-SHA1: f14f7b1c6cd0370bfdfe4e97ebfce1842f35e399
-SHA256: 6182cdfb3bbcb310340eab19d8fd5f928a31cab9eaa4d6267c342112c1c8b078
-SHA512: a80a97740b10e769d991575d75d01d6a08af3362b3a79a5163567bf6f65e59b0a63d9b19597456abd25e713dc3336d835749619adf40691853cafb0aae66c4bb
-Description: 0.16+b1063-compatible Buendia database state
-
-Package: buendia-dashboard
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils, buendia-server
-Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
-Filename: unstable/buendia-dashboard_0.16+b1065_all.deb
-Size: 8142
-MD5sum: 214538e21f23040d3123e92d586057f0
-SHA1: 68d6649bd441c219de9f2cf7f48abd7c5df31b91
-SHA256: 195fe4b5ca9b836b513a8639b77a7eabb46e1e7c572e1f13f1556f8de9d2eb15
-SHA512: 49956050491a263ec2959bf88062a9d6bf22951aa891f253d0cbb66b5ecf699918625e2005a1cce6277bca88ea60e897d75b4c31f803d38d1c5a49adefbd54f5
-Description: Serves a system status and administration page for Buendia.
-
-Package: buendia-site-integration
-Architecture: all
-Version: 0.13+b700
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-integration_0.13+b700_all.deb
-Size: 1966
-MD5sum: 5f2bcedb82772de8344f6263a35ea696
-SHA1: 9d3248602c6e5cc9fddd0ce9239e11f74c5effd9
-SHA256: 4e64ef7c0f2984a4528f8e8cc99c4edec82f4e0cd1be3fdd31e889c67ab57400
-SHA512: d25c72c147640b4c92b8fe65e3c463ea345b27e1e2da55d7252fd2fbbf55fef695046c49b6b985529e53b86031732d9bd54c3f05308c45767de7307fb5104962
-Description: Site config: Cloud - Integration test
-
-Package: buendia-site-dev
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-dev_0.16.2+b1118_all.deb
-Size: 1784
-MD5sum: 300945859e0da53e6f7a66dfa67d1226
-SHA1: 4a7d476325e3f3e63208d4ba1b6dfb71d7a53701
-SHA256: 4ff495def3dc95f5bac144357241cb99fce2ad5d22037597a3d100b2e482411a
-SHA512: db66ee82cfcf3b9b53fddc759da4bbcbe41cd39290020c0a74913751e48ddb2aa11c9e0050097d06d490217cf104696faea27d074b683b12e5298b56b31ab651
-Description: Site config: Cloud - Development
-
-Package: buendia-db-init
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-mysql, buendia-utils
-Depends: buendia-site
-Filename: unstable/buendia-db-init_0.16+b1063_all.deb
-Size: 13232900
-MD5sum: 21d1577fa31f0ee2e2908633f9ac6d01
-SHA1: 27e9679f9dbd1c4b28d3074e614eb95cb25203ec
-SHA256: d317566b07034ca64f6aae0005182b36bc22bbf33ed8299b3b51d80b41ea6f3f
-SHA512: 3bf450126de5750b50a33ad2596b88396d115546ab5bc0ee486abf1a73e140e8b9160ccfc99d165110f68e1ae47c5127a6b7b16e94055e2ab776ad03673c50c9
-Description: Initial data for the Buendia database
-
-Package: buendia-site-msf-chad-bokoro
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-chad-bokoro_0.16+b1063_all.deb
-Size: 1760
-MD5sum: c1d83553e0fce4a20a508d2ea130732c
-SHA1: 56c1e8e346b210b5a638d60eb991347bcfb6926f
-SHA256: 9b911051aca425fceb556347162627498ec7478cb642b4c3e188d695c69f13b8
-SHA512: d93134968402f9f12ad7ec299e984af4d1db7adc12c96d6c4235eb233f1b2b5610f480256eac52eabd7af0621ba5dd044d98b50794947334ec5473f1fd39b8b0
-Description: Site config: MSF - Chad - Bokoro Nutrition Programme
-
-Package: buendia-site-test
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test_0.16.5+b1188_all.deb
-Size: 1770
-MD5sum: 39c5acd50d520a700cf850ae1bf55dce
-SHA1: b3ba2978370aaa063747f2ab2ba7eb4248f33f4e
-SHA256: 49846077916c8c844ecc38e5ccba97eff258e56540b3a54f4d15f47cc333ef78
-SHA512: b5693e17583f905680e9218298b39b85d2cdde491bd770c4294d074aa33fd7e813a7391d2b407d596673c9b49425e91a98df107ff02e0fbc5e0450104572d3bf
-Description: Site config: Edison - Integration test
-
-Package: buendia-utils
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Depends: coreutils, cron-daemon, curl, perl
-Filename: unstable/buendia-utils_0.16.5+b1188_all.deb
-Size: 14004
-MD5sum: e430f37cc1c26b1f311f4cbd38c44bf7
-SHA1: 72707829ae3b5a47248b8e6df6adebfc71d9ed85
-SHA256: 94e6ddec51ff428f9bd613427a35fd2da97ca81a172ae63ecaf5dc108366ae8f
-SHA512: 53fd70aa56cdcda0a1f3a549a04ca244a4df7345ed3c62c93a82cd6ec11eb8362c3eea1db263e981c70733eff424d212e9a8ee41aba773e3da32ba1141d30099
-Description: Utility scripts for Buendia
-
-Package: buendia-site-cloud-demo
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-cloud-demo_0.16.5+b1188_all.deb
-Size: 1610
-MD5sum: ba5cdb292130a4361c2050126bfd2749
-SHA1: 0a7d095535565baf48e1f6b5c4850efe72d7acac
-SHA256: 2fc118e4693d06895c546ee7f9f0bba72eb0675ba750b0033ccdaaba344eb9a9
-SHA512: ecd17aadc44d32c4678437395367ae729b0683dc20ab3a035cfddb811dd7b6e7205c38b7a747342ae8b6b9cdf125a27540232541fc7ad46750407e5cf132efbb
-Description: Site config: demo.buendia.org
-
-Package: buendia-networking
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
-Filename: unstable/buendia-networking_0.16.5+b1188_all.deb
-Size: 6994
-MD5sum: 3c6cf2ffa6e5df64841d6329419f4ebd
-SHA1: 8f0813ff58cd1cf50404f4aec69e147c710846fb
-SHA256: b41e8c2dc3e7f5358ce2201e4efea0a537d6003d7aa68863f9de0c79ba41ec21
-SHA512: dd0b02e2e3287a44851ccde656b4766bfc4b485b75ff69f9cbdcd9ac1d34356996bd0525b09c71a266db7f113112e3afb5c8b80b0e0aefdcc142c378004cabc6
-Description: Wifi AP and DHCP/DNS service for Buendia
-
-Package: buendia-site-cloud-demo
-Architecture: all
-Version: 0.16.4+b1174
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-cloud-demo_0.16.4+b1174_all.deb
-Size: 1612
-MD5sum: 857c643d9b858ee4a336e854e7d8a219
-SHA1: bd55ba6f9d8b32790c81a609f8187492ec263880
-SHA256: b6870fa6f66c270b47f2f2decd26c38230ffd25b8cd4bdc3f97db40c7412295b
-SHA512: 147930437855f5607166f5aada99b1da5f72c81dea053e3e10e3c1739abc35f4915e3015b2a537834133348ce96d9cc18f506f2a4253560d6eb949df42f9f15b
-Description: Site config: demo.buendia.org
-
-Package: buendia-db
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-db-init (<=0.16.6+b1203) | buendia-db-init (>>0.16.6+b1203), buendia-db-migrate, buendia-utils
-Filename: unstable/buendia-db_0.16.6+b1203_all.deb
-Size: 1098
-MD5sum: 36431e042f86b03f0b0ad9508a51ec5a
-SHA1: 6738c653d1df630672ec84c468ef469c3b79af6b
-SHA256: 5e57f1d9ae542d6180728469034b52d1325cdff1314ccf447743642976ec2144
-SHA512: 58653dea287889c8b9b2cece76a84849faebaec4836adaeefb4bad2b372c3e06128371e8b98a84195ad9b040da772323df9775448743517006948ee7369abc97
-Description: 0.16.6+b1203-compatible Buendia database state
-
-Package: buendia-site-msf-chad-bokoro
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-chad-bokoro_0.16.2+b1118_all.deb
-Size: 1764
-MD5sum: dec7ef3be569e386ce01a97902def4ad
-SHA1: c2a7a43ffa0060fa26ccd04007516045e67a21cc
-SHA256: 7b11dc60b50d0df26b9d6bd76a4bf0c0f20b2353d390b179db68d97c9592e806
-SHA512: ddcb057a7924e6bf98b313a55c3b4a28e5aaf2e0da9aae58292d13a4343289d880a10ffb3ef0ecbcb953e87647bdbeee0afe6e507ea276c701cf09a55c2d1884
-Description: Site config: MSF - Chad - Bokoro Nutrition Programme
-
-Package: buendia-db-migrate
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Filename: unstable/buendia-db-migrate_0.16+b1063_all.deb
-Size: 1602
-MD5sum: 382731e7d1194a896f2f3c273d93f936
-SHA1: bbbcd060cde95f4454904a54d0520fe674546bad
-SHA256: 459ca1217cf2ba29dfb13fe7e7324dd2b58b47bd3728d3e8ad302bbb5d12b385
-SHA512: 959bfe3291c0492af4ea92f037870f524828e324368a56164c3228b585bf03849d56fa4c618526792c3f07b59cdc2a64efc5c7d4922069536ac3ae9b6229fe98
-Description: Migrates a Buendia database from version to version
-
-Package: buendia-mysql
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, mysql-server, sysvinit-utils, unzip, zip
-Filename: unstable/buendia-mysql_0.16+b1063_all.deb
-Size: 4138
-MD5sum: baa11d5bfd13283932ebb2dacf71af9d
-SHA1: 0916cc40262b65058ac452c52bda50c42391edde
-SHA256: 08d6a981fedbe67dcd7baf9ebcc9a3748b3b729de7c89e4ac683e5a1a020afcd
-SHA512: 9e41d65db01f636a1d8191f56244e047d8ea1d6c7502e24c098210041894c8f061927bb114de0b3ec611ff68594c6b7da06df0e463c5208799fdef76f9ff89b5
-Description: MySQL server configured for Buendia
-
-Package: buendia-server
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-db (=0.16.5+b1193), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
-Filename: unstable/buendia-server_0.16.5+b1193_all.deb
-Size: 4427708
-MD5sum: 1cf28eae0eb4444f28c8cb7dbb47918d
-SHA1: 541cdcd74c12be63a789dd8008be13528dea158a
-SHA256: b06ab89150196ff244a5da179176c005966449f02882dea58dc1852176d612fb
-SHA512: 6b4997417578ae8d2bcc5fe8eaa9d151a4deea433125a92f852276a13c9b869df63e5ab0620e12bace89f63e3635ca85449566c655a250e9c7a6e6d91c5db38c
-Description: Buendia API server (an OpenMRS module)
-
-Package: buendia-site-lon
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-lon_0.16.2+b1118_all.deb
-Size: 1764
-MD5sum: de2554b13707a19821de0879f8d42479
-SHA1: 85561f49cd6358ce16a1c230b869f5ec0c384f58
-SHA256: 30c00e6cc5fa3e8c26da2428592cd051bd1af1d3b8444f50099c25e3fa155ccd
-SHA512: e65aead45ec3570c7da95c2f64f09422e6ecb41d7385b4bd6d9161f375e9ea0e6d0a9ab4af2b510bdd1a596a856749ebcaba4b85136c0d3e803e01e7a7ef3a5a
-Description: Site config: Google London office
-
-Package: buendia-db-init
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-mysql, buendia-utils
-Depends: buendia-site
-Filename: unstable/buendia-db-init_0.16.5+b1188_all.deb
-Size: 13232836
-MD5sum: 6e9118f54084e511fb4a2889bef8854d
-SHA1: bfc05ead82e850a06c783fd3a5591a552ebb1995
-SHA256: d8444cb1600085009afa1074f398d6afdd53642aeb2ba9c172996e3ba08cc8f0
-SHA512: d7d5c9627506b6d0084cf9a488bf1d9483997e12640adbc2d22081d3dfde9ec1a372f4bd91ae08c7b00d58af18cee0d105120080fb4851ff826faf14d3dd71db
-Description: Initial data for the Buendia database
-
-Package: buendia-openmrs
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-tomcat7, buendia-mysql
-Filename: unstable/buendia-openmrs_0.16+b1063_all.deb
-Size: 36912088
-MD5sum: 54b5b7a0eb0675698de804516f061c83
-SHA1: d87d21e8dd9827ee58e0a1d5c2733c2445a0e2be
-SHA256: 94d231e6535917d42db63e549729cbf624b4616da34c8bc685f9e816cbea0b94
-SHA512: 40b8b2c68302f2c96388ef9912ab941edd13d7031c31901aaae071767faafdc95722dea531c0be68aeb6fba4aba0e30d60ae60b96adb329e15eacfb9a3ffcf36
-Description: OpenMRS configured for Buendia
-
-Package: buendia-pushclock
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: gcc, libc-dev
-Filename: unstable/buendia-pushclock_0.16+b1063_all.deb
-Size: 2016
-MD5sum: a57a5f75928b401117ffb756744b8a2e
-SHA1: 1f877768b24a3b01f9145899da17015ecea0edc6
-SHA256: 1515bbdcd528df99e5edbb7d5f0ec9ee87290018686142e8165fee7ab1ab6969
-SHA512: fee31ca4af549bbdd204cecb0497dfa71cb300dd78e45bc8d7129603bcfd6f433e628fa341f1d6177c19d3e6b9aa61193c1244514971a961fd475d0e6764e853
-Description: Advances the system clock to a specified time
-
-Package: buendia-utils
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Depends: coreutils, cron-daemon, curl, perl
-Filename: unstable/buendia-utils_0.16.5+b1193_all.deb
-Size: 13950
-MD5sum: 80f7613780493170582ca8943cd31e60
-SHA1: 1f2dd8822098705e1e5ff12f3fc15ea6b8ff3861
-SHA256: dead39d601770d4d77f31a8e129f654a3617512d9effc80d3b610248c0fc2ee8
-SHA512: ebd994c30a21ad58277c2d0220995daafad4983dadf48fe84b678676140394be5d9f7d98aa9e6ccbfe4e349ddcd0674a1d06b15dcd2e10b95419ec9b120e73d6
-Description: Utility scripts for Buendia
-
-Package: buendia-site-msf-mg
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-mg_0.16.2+b1118_all.deb
-Size: 1758
-MD5sum: 8b132c54434e0984f8763899febf8c51
-SHA1: 27611bf283c3b0ba0d788fb4d1036868383dafd3
-SHA256: b6fe61ed4de7d0e7a018b374f5e881c4c54d448a0e391d3b06a55320490c58e5
-SHA512: 035a25669cb74bbb955465f68f70725bebc0881fb4c4c9822f75f943b8109c5705cf34e0043c66b851df3c68c06fe2c3b38aec8398c5dbcd8eb38d40c791d792
-Description: Site config: MSF - Magburaka EMC
-
-Package: buendia-pkgserver
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: nginx, unzip, python, apt-utils
-Filename: unstable/buendia-pkgserver_0.16.2+b1118_all.deb
-Size: 8204
-MD5sum: a31a903cca3ad5bbeb2df42b960198a9
-SHA1: 44240adde26e6b2a575095aefc746c24e616b048
-SHA256: f3a0dbfc6c9fcb7a8b5d5f07f53512bbc4765a5b49853e1bd2a6426458c4cdbb
-SHA512: 38736778f6cdb2ea7e0b26f325ab92556221054932752b941164727856895356e4b054114af5cbd97fcb2d0d9692f517451aaac7f5c76dcf2fba88d4f93b24e4
-Description: Serves up Buendia .deb and .apk files
-
-Package: buendia-site-msf-mg
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-mg_0.16+b1063_all.deb
-Size: 1754
-MD5sum: e6097fc081709024719e811e529fa5fc
-SHA1: aa441055804dedc86861343a12d7042b308fe9ed
-SHA256: 13656eff632e9712a86c98f91e391e9a7e73156148fd903b7540360336eac5bc
-SHA512: 819e6b542054e73638c0fdf983a3c0e570e9b0c94b1ef414ee4a88932d5cb1c3ea0af4aa973029ae846e7d7cc750363da63de970057c6388ef48dccc93bb0409
-Description: Site config: MSF - Magburaka EMC
-
-Package: buendia-utils
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Depends: coreutils, cron-daemon, curl, perl
-Filename: unstable/buendia-utils_0.16+b1063_all.deb
-Size: 13858
-MD5sum: 37e47bd793161f758ae8e70eec492275
-SHA1: 36177b0de8627e0eb93069c57d483b7161b4b942
-SHA256: b5dd2bcf5b41bd16efe6b0cfdf2df0d09255574bcb2147269578af8232c6fbd5
-SHA512: 3390bb03789baaf533361c944104b7a9bc5290b38d8d1073fc9f1c040635847e0e00c061a90087169e450c76b5546779d7f7194cbae6b966d4154fc2caa5aa69
-Description: Utility scripts for Buendia
-
-Package: buendia-db-migrate
-Architecture: all
-Version: 0.16.5+b1188
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Filename: unstable/buendia-db-migrate_0.16.5+b1188_all.deb
-Size: 1606
-MD5sum: 394116aeb41b37eb3cf983e4c61e81e5
-SHA1: f4fe73922920934f48690d2e069adcee96a6fb97
-SHA256: 4d0ba593c9bd4905a95343c548516a0a33cec8e39a5cfa0be227ce141a1f6e58
-SHA512: 8d5c74abc89dc2808a29a47dec3d6694f83cacf7f8ecc65aaed05fce7aa7410723be9ece87a8e17af363a289ff113b188f6d64ffcdd8745319dbe4f08d72d1c9
-Description: Migrates a Buendia database from version to version
-
-Package: buendia-site-demo
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-demo_0.16+b1063_all.deb
-Size: 1716
-MD5sum: 1eede77938d35267ba06556a92d5d1f7
-SHA1: b4aac5a02507931a04d38546411b9cdc72c4cceb
-SHA256: ffb3483c6173b1460b94668da62a530ca93359ed474cb9a7558a38391dc615d6
-SHA512: b1e0d424a8c0147d23cfe9ef75db1f94437e9dd64e7034596463143a1f22652110fac78393064a9ff8cff7bd68c3da92397faebaa257977f736a575addf277fc
-Description: Site config: Demo
-
-Package: buendia-site-test-integration
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Depends: buendia-dashboard, buendia-backup, buendia-monitoring, buendia-server
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test-integration_0.16+b1063_all.deb
-Size: 2142
-MD5sum: c3882294b6d37d035b0931e5c619c035
-SHA1: 568b86083b1855fcb3db42781c4514a49d9491a2
-SHA256: f2c30fa6090823724ea5ad278ba23dab66856fba588a4543e36296bd7592c533
-SHA512: 56d010e2ecbdf3688f03cd34a4f886aa40ac32b70c78cc627d8e4b9195918e92eb959a34a3975d4c4d197678c26444ce3642c18cc26801960b0bef1c88ea368f
-Description: Site config: Destructive integration testing
-
-Package: buendia-site-test-integration
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test-integration_0.16.5+b1193_all.deb
-Size: 2280
-MD5sum: 63af8627a6ea278eb850e04308966b5c
-SHA1: fe911347849ddbaebf88c51d4f570e99babdb39d
-SHA256: e70f78676cbe23d9d1160ad44ef9bf6864da2500b0dbde8ac14476a472050e9d
-SHA512: 6cb00ed80be7386a8a8707b058ac663833e2bb0464be98dfff202fa21d5da126ee5a05a5cecca260078878cecf12a003134539fa1e506eba0402b844adecf32d
-Description: Site config: Destructive integration testing
-
-Package: buendia-site-demo
-Architecture: all
-Version: 0.16.2+b1118
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-demo_0.16.2+b1118_all.deb
-Size: 1728
-MD5sum: 50a9c342817d134b6de2404f4b704e50
-SHA1: 5f658dcfdbaf5728132094c2a587d4bdc79e0cec
-SHA256: 331f115471b8bc2e3f2b47c9c70ac1bfed891f5339ab963da58594f7202c74da
-SHA512: f765c5e9801eb98642603508ccc7d304f6b99cfa80dc9c9a152f5ade6f15181e4ae5f5501c5b684a58354573b5b47159b2717158552d6904ed6b2eae1f41f173
-Description: Site config: Demo
-
-Package: buendia-utils
-Architecture: all
-Version: 0.16.6+b1203
-Maintainer: projectbuendia.org
-Depends: coreutils, cron-daemon, curl, perl
-Filename: unstable/buendia-utils_0.16.6+b1203_all.deb
-Size: 13914
-MD5sum: 4ee769c407ec00a40a488c17eee064bd
-SHA1: d9c35d8af2b60d29d4c8672bb37b541549d6e8bf
-SHA256: 5e8963162f3a82802fbaf192450549c68c399e8ee5bc7cb139a36f2773f5df96
-SHA512: f7e7b4839e209145b49b6ebbfa967b3ed06ab6e9661eb1e3de441e31f8a0f4068e7703254fa159102212cfb733fc252ddf34680d97a032ec711962a0d1530eba
-Description: Utility scripts for Buendia
-
-Package: buendia-monitoring
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: cron-daemon
-Filename: unstable/buendia-monitoring_0.16+b1065_all.deb
-Size: 4496
-MD5sum: 0618b25e7402a2cec06b127b0c1004e8
-SHA1: d08241c0391c4816e87d903c9400abdb7930eaa0
-SHA256: 169acc18bd0e1ab15bef31a859e00c1afe5126ed4d9e0d1579b3813f5050f2d6
-SHA512: bb22a034b98736933aa1bd629169355f8a0612eb864c25e0a8aa48f08dfe22e0411f9cdaab1f70dc6b042f226e3175a324879f44b21dd7bc27cfd91d16334fff
-Description: Monitoring and log rotation for Buendia devices.
-
-Package: buendia-site-msf-chad-bokoro
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-chad-bokoro_0.16+b1065_all.deb
-Size: 1760
-MD5sum: 99119d2c97d38e618bef4c8f404d9dd8
-SHA1: 1004d1c6f9537f51a16d03919a32b50b75f96a7e
-SHA256: 7aa3cdbeb55f2f036cd9cf920417200c03364a27d4da201300ebc3fe7b16d594
-SHA512: c9268a47d0d164238431f0a26c8d32d7bc8158d27c8d2ac0ef009dd5756bb0d318bfdc809e0789e9cdd40ec978d5da870bbe5ec5abf4b5c94c6a3857aea467e6
-Description: Site config: MSF - Chad - Bokoro Nutrition Programme
-
-Package: buendia-backup
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, buendia-mysql, cron-daemon
-Filename: unstable/buendia-backup_0.16.5+b1193_all.deb
-Size: 10454
-MD5sum: 03f4fd5ed57941fc5b824a4b01acab49
-SHA1: 02709d6f1de17fb21ed07f10c8ce1a16746acd59
-SHA256: d444b43db002f9aca5d9240c35b2a9c4d718312fddcaeb5a056474ca6e44559d
-SHA512: 74ac2f3489721415a0e9ba047cfa67705bb8e09ec47dc5790bfd58eef99e9019ea7b831fa6bbb92ff5070403a8ee73d66fa1d1ca87c464fd5a76732e909fa636
-Description: Backup and restore for Buendia
-
-Package: buendia-update
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, util-linux
-Filename: unstable/buendia-update_0.16.6+b1207_all.deb
-Size: 4786
-MD5sum: 63059a129e56c5967b1223b3d75ea392
-SHA1: d5eba321abc09b352cca5b56ef776339beb7958c
-SHA256: 4b1bb77ce06b38fd1fb05e47d1c6a46d67fc023b2bf7133fbc10cba1c36ca2ad
-SHA512: d166156859387d02f01a235ee0324906298b648d67dbf3ccc557a75a364d4b1627abfcfaaa9a4f76449c8d820f971e1e7d224329501acfd4f1452601226fe475
-Description: Keeps Buendia packages installed and up to date
-
-Package: buendia-site-demo
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-demo_0.16+b1065_all.deb
-Size: 1716
-MD5sum: ce7b773c7422e66709994dc051f073a7
-SHA1: ec825b5177331a0f183ad47104850496819aa2f2
-SHA256: 56b4d4597ab50ccdfa286ab5176a376299aeff0279a1bf43516d088f09e91357
-SHA512: 934dd36ee8c7014a65d3654be72f873cd05739c3b3189204ecc30fa162a14da2d55654730b8994ca584e34ddd8bd147e08a9b8286a3be9447a07bc743666bf3b
-Description: Site config: Demo
-
-Package: buendia-site-reference
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-reference_0.16+b1063_all.deb
-Size: 1828
-MD5sum: e70ada2161b2b12920def5b7298bc7d7
-SHA1: 8e5d113780ec506e87806ae2beb41b73f85f5c17
-SHA256: 637c035dbcf2d63230b05f1fea59073bb25d38dd7adbddd8a4e5a2e3c21da2ae
-SHA512: b51b9ccabdda7049b1c705bae413ce5977fb8d00046ef86a623995445ffb85e1ace540802c74a529c13e514a69360f6eb3b970c74902bd7aea368a8d271578fa
-Description: Site config: Reference deployment
-
-Package: buendia-ntpserver
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: ntp
-Filename: unstable/buendia-ntpserver_0.16+b1065_all.deb
-Size: 1854
-MD5sum: e7e76686974e2e0314649cee88a335d5
-SHA1: 561a512b9265f459e0d626aa111d30d173b97ca7
-SHA256: dfe4b32667ab071cca553e980be5ed7df65f4b783462f3ac68592a6456686b47
-SHA512: 08965d8711c96e891fe1e159f2ae4974b3fc65852ba948ef23b8deecea0553630a024e86e3339319d802aaa6a77a40edd2ef1ffdf7d5739fcee56abe47a871dd
-Description: NTP server configured for Buendia
-
-Package: buendia-site-test
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-test_0.16+b1063_all.deb
-Size: 1766
-MD5sum: 423ff5485457c37cb0fcab9e37dd1269
-SHA1: e9f57a810aee04ad98b41220df004091056176c7
-SHA256: 56777601c1be9de88858b71069a362928e83e22b2802e2d2db52e88982c64139
-SHA512: ab20a4237943f572e432c479390b2a54605b06f625c127eb940c962ed82c8e8db7919202aa5f1ee41bf5a0c23a2c486959dfbadc18811dc08aa1bb57ad85a20d
-Description: Site config: Edison - Integration test
-
 Package: buendia-sshd
 Architecture: all
 Version: 0.16+b1063
@@ -1576,158 +756,31 @@ Description: sshd configured for Buendia
 
 Package: buendia-pushclock
 Architecture: all
-Version: 0.16+b1065
+Version: 0.16.2+b1118
 Maintainer: projectbuendia.org
 Pre-Depends: buendia-utils
 Depends: gcc, libc-dev
-Filename: unstable/buendia-pushclock_0.16+b1065_all.deb
-Size: 2020
-MD5sum: 48046419f94d155274d31a40d3e01539
-SHA1: e04e33a881916bd2aefe4dea4c97d0a965ceae34
-SHA256: a64aa9b55bafe9d980b3e1dbefc6f59d0a5fc566728345f7ee187233914b0607
-SHA512: b39fc788d6638f41f0e542a252788ea9de31934cff15f10874b7f498464eb3f4896b4da4259010d5ddffa7ad191724c9a1635ad1099e34b896dbfcde444bf6fb
+Filename: unstable/buendia-pushclock_0.16.2+b1118_all.deb
+Size: 2016
+MD5sum: 474fba277f361edfb37af897effd84c8
+SHA1: cae36bdbfbe5631d5d9472232580acaf9badbbc3
+SHA256: a296d1c259ee2af4992bbf2c83b4366e42bc2b7082bbd1f992b5acbe1307b3ea
+SHA512: 90ec6ce7e97a37ab04f65bd74450ac99df4613110009dce3bc3f80f53d6e172a7af115463466cd37240bcb7abcc66adb2180aa765ca5633cffed045447d823d7
 Description: Advances the system clock to a specified time
-
-Package: buendia-tomcat7
-Architecture: all
-Version: 0.16.6+b1207
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
-Filename: unstable/buendia-tomcat7_0.16.6+b1207_all.deb
-Size: 5676
-MD5sum: 24204c7c0f1a58c45cdd15cfe998e9e7
-SHA1: 2e7a18c11fb561793e3cbba072155f8cf1ca5cff
-SHA256: bcb5e9ed3d515b0f4ce2e96779dfb18770635847ea1d6b8e2c69a40c27334571
-SHA512: 4bf735937682e19f74de36164feecef322bf9a58fbcbefe41c650148887e46b23f959904535d77d12b1f7a082cc4d7f42b547671709d4264eed95e884cfcd104
-Description: Tomcat 7 configured for Buendia
-
-Package: buendia-tomcat7
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
-Filename: unstable/buendia-tomcat7_0.16.5+b1193_all.deb
-Size: 5722
-MD5sum: 8e479b85052a84d2e4019d0d2d04ab2f
-SHA1: 74af07c5fb53a445f2e9259413f30f908de46b39
-SHA256: d376bf0b64e2471dc0da1ad84adf044a986d546d249ea4743bbfa112e0b232cb
-SHA512: a473a66b08933357da0740ce1cfcebcae6d374ad1e877da43d4da3b255182b89a1e92bf30c280fe12a0382d71eb47945ffe014747ef4d1e6321fe61992d0f0be
-Description: Tomcat 7 configured for Buendia
-
-Package: buendia-ntpserver
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: ntp
-Filename: unstable/buendia-ntpserver_0.16+b1063_all.deb
-Size: 1852
-MD5sum: 6c0dd0bd577d4410ca14a06dbf851c49
-SHA1: 5ab967432511b964ba4d0e74f2c0c089d2089e61
-SHA256: 086a47ad38fbbf3ea3fda74f38d49649a42a7e9cc737127076cc9638cc0deea3
-SHA512: dcb2e5b61f06ab69dfab82091f091c3f7f1502efb3722c1a8670116ed1044343853756ca07dec708c179edc26a193b12405dd95c3701dbee8cd108f7570a3b77
-Description: NTP server configured for Buendia
-
-Package: buendia-site-msf-geneva
-Architecture: all
-Version: 0.16.2+b1114
-Maintainer: projectbuendia.org
-Provides: buendia-site
-Pre-Depends: buendia-utils
-Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-geneva_0.16.2+b1114_all.deb
-Size: 1728
-MD5sum: 5b77249c9e43f2f2b03dce15eef2e3aa
-SHA1: 4689cd326ca9e498a1560aa0c086f812249ac591
-SHA256: b45ced00ecd1306f086d28a7bb8343894d78c5226f7dfa9e3a30b9eeee556d5d
-SHA512: 744013832db4326307c7b03c68538bb55fceb7ec150176c34990f3d0e6d6f572ffcae673fb643ebb5e9b206bf51cba1060e93e14545f84e60d61a4c8bab35e64
-Description: Site config: MSF - Geneva demo
-
-Package: buendia-server
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-db (=0.16+b1065), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
-Filename: unstable/buendia-server_0.16+b1065_all.deb
-Size: 4427430
-MD5sum: db89fa332eb7ca6b9c78ff58a25a1e9f
-SHA1: a07c6664a55d6a33e3e811f628f0f10c6654b456
-SHA256: 93f059a026f495aeb840454d2f31d3f03ff8aa822bee02da535cd3599a38979e
-SHA512: d86b84bf5f9edd8ee4f49551f66088fd52e7137a82f2072632327ff834d779cd1e21d28fb6ace182cee12cd2baca92f1972ab4dc1e08d488dc30c2ac8d55e960
-Description: Buendia API server (an OpenMRS module)
-
-Package: buendia-db-init
-Architecture: all
-Version: 0.16.5+b1193
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-mysql, buendia-utils
-Depends: buendia-site
-Filename: unstable/buendia-db-init_0.16.5+b1193_all.deb
-Size: 13232738
-MD5sum: cf4a74c3be9a8bacfa24ee21e62f34cb
-SHA1: 60aac94abd9db43fbd73f2a3a9bd043844f1c5a5
-SHA256: add8bdbdf0f5e01c677dbf406c37555a566dd89346139f7b474d858826a867f9
-SHA512: c1766b090d3fe9a618760f18814a71fc9142cc2a03d6ac7a1edb2c86284c3fd384e3685f2bfbc0db1ee3a3eccabdef5768e8aa38d67189cad99a1b715fb5abc7
-Description: Initial data for the Buendia database
-
-Package: buendia-mysql
-Architecture: all
-Version: 0.16+b1065
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-monitoring, cron-daemon, mysql-server, sysvinit-utils, unzip, zip
-Filename: unstable/buendia-mysql_0.16+b1065_all.deb
-Size: 4152
-MD5sum: 7006151a261c311684434343c45e6e94
-SHA1: 05fb95035e7981704fc3cf22c377c064c20089bc
-SHA256: f4c173598ec9d825ef447dcd588452b97ac4164913fd66fa4da8e0142bac11c6
-SHA512: 9ba7b20d82c8433efc5d4c95338570aaa4602d7de9c3008b5c2163272e21336b2d5a415140f9f827a5885caa580adf723a4c31eb6cd8dc63303f037e3e8e4546
-Description: MySQL server configured for Buendia
-
-Package: buendia-server
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: buendia-db (=0.16+b1063), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
-Filename: unstable/buendia-server_0.16+b1063_all.deb
-Size: 4426330
-MD5sum: d52777fb6e483698017d9591995727d7
-SHA1: c965be291af724c3672a1d71218f8d5372be1ab4
-SHA256: 548041c66c62c75ed6a8ad51c0399387bea00cb0c652e4dc08a4b0d66cb9fcf3
-SHA512: 0ace07fe5cf0ec4c70d6d9ea3bf03d7304efc83d4ecfa2ce3a401d1224f9eb8840c51b511561b476af6a0e224b4b4e8372a255ee6b4530d8197441813d8732f5
-Description: Buendia API server (an OpenMRS module)
-
-Package: buendia-networking
-Architecture: all
-Version: 0.16+b1063
-Maintainer: projectbuendia.org
-Pre-Depends: buendia-utils
-Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
-Filename: unstable/buendia-networking_0.16+b1063_all.deb
-Size: 6670
-MD5sum: 255ffee0a4fca428dc440b1c331b514c
-SHA1: f0b3b740dd6acc4248410a2a5bcd7455e55a8978
-SHA256: 7d4f80a0b7b03829effea499e0167d450d9c93090cc0526077d67701e39cd61c
-SHA512: 78408974f8819bd81f39146b2b39de9f197456cecf1de38a2007b00151b97877465b8d1d557c0eab45caa7f2771c85e3309183c1c776a1cacf32a01a70627579
-Description: Wifi AP and DHCP/DNS service for Buendia
 
 Package: buendia-site-msf-mg
 Architecture: all
-Version: 0.16+b1065
+Version: 0.16+b1063
 Maintainer: projectbuendia.org
 Provides: buendia-site
 Pre-Depends: buendia-utils
 Conflicts: buendia-site
-Filename: unstable/buendia-site-msf-mg_0.16+b1065_all.deb
+Filename: unstable/buendia-site-msf-mg_0.16+b1063_all.deb
 Size: 1754
-MD5sum: 58a0f98738773de0c8326d89b71a1a80
-SHA1: 5f845ec9decbb623c56520edd6cb7e5cdab85ee8
-SHA256: ef367600172614da5969b6beec6f7f0696f4bd859de668cfeacf8c2eafefe63a
-SHA512: 6bfb4ea06e5f1f482bfb96f05b7009051e57983b0303c0727bf1c1de9752cff6c3b199b1d1c88cbec22345a07676fe493132ae262c6717e49c22f4b12a6571bc
+MD5sum: e6097fc081709024719e811e529fa5fc
+SHA1: aa441055804dedc86861343a12d7042b308fe9ed
+SHA256: 13656eff632e9712a86c98f91e391e9a7e73156148fd903b7540360336eac5bc
+SHA512: 819e6b542054e73638c0fdf983a3c0e570e9b0c94b1ef414ee4a88932d5cb1c3ea0af4aa973029ae846e7d7cc750363da63de970057c6388ef48dccc93bb0409
 Description: Site config: MSF - Magburaka EMC
 
 Package: buendia-site-cloud-demo
@@ -1744,4 +797,463 @@ SHA1: 65dcc17c2c49f792e53d3dda2217aff177e60bfd
 SHA256: 696fad44f1448d4e33d8529fd54ca6ed123e26e8916ae4d458e90158cf957027
 SHA512: 96c7c0c5dd7586dfc2615bacffabc2fd1b3392a4a02d61605770eb33baaea68afcab0bb8545d70991767e97e5a3fbe1c0abf479a37e1bdb2bc977c9326dd971b
 Description: Site config: demo.buendia.org
+
+Package: buendia-site-msf-ks
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-ks_0.16+b1065_all.deb
+Size: 1736
+MD5sum: 423b3b7d58098eaec1c17bba86b0714a
+SHA1: 52c47a12a9248dd0c77061d2f0720c48e38c8c1a
+SHA256: 893e14fb745de4f009a3122e161037348ae0ca4c4037be2d2755f4bda3e0f529
+SHA512: 67fb5dd8460f81025b3f414936f096a9ccd5bb1b293afe392221f2afa87061b42d5eaff4ec6a03de91077d859077ccc1ab7e8976544341b1303639104a5cf0b8
+Description: Site config: MSF - Kissi EMC
+
+Package: buendia-site-msf-ks
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-ks_0.16.2+b1118_all.deb
+Size: 1742
+MD5sum: 0b16a06b5b6b136e032119c1adc7f989
+SHA1: 3e5026b89595fbc70d9301fe3f8d44a16b680dd3
+SHA256: 7bc785d95b167dd26568b05500eec32fc07bdae5c46136b567c200de689f8857
+SHA512: 156be743c848e8de12c3623528b4f294290b9d33907710d45f6e29feb8299be08064980e18d4b474d2dee5a2abaee6ab810982e719b6081b006628137f27b14d
+Description: Site config: MSF - Kissi EMC
+
+Package: buendia-db-init
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-mysql, buendia-utils
+Depends: buendia-site
+Filename: unstable/buendia-db-init_0.16.6+b1207_all.deb
+Size: 13232732
+MD5sum: 87260ec3f849ad153806d1ea55885455
+SHA1: 5545fa807064f5671ca908ced1032ec9e1f2d43a
+SHA256: 8f4d02fe4fffff2a3df178468423076cf983b63af3de273cd0273a11b8234355
+SHA512: d87336bc37f0dc211f2d2f66f80bd4fa2fe68ed8965e2f1ffa33544b7a72960ac6a348f73b172d1be93417ee38bae8d21e6dff119739899c98d66e2f780a1008
+Description: Initial data for the Buendia database
+
+Package: buendia-pushclock
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: gcc, libc-dev
+Filename: unstable/buendia-pushclock_0.16+b1065_all.deb
+Size: 2020
+MD5sum: 48046419f94d155274d31a40d3e01539
+SHA1: e04e33a881916bd2aefe4dea4c97d0a965ceae34
+SHA256: a64aa9b55bafe9d980b3e1dbefc6f59d0a5fc566728345f7ee187233914b0607
+SHA512: b39fc788d6638f41f0e542a252788ea9de31934cff15f10874b7f498464eb3f4896b4da4259010d5ddffa7ad191724c9a1635ad1099e34b896dbfcde444bf6fb
+Description: Advances the system clock to a specified time
+
+Package: buendia-site-demo
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-demo_0.16+b1063_all.deb
+Size: 1716
+MD5sum: 1eede77938d35267ba06556a92d5d1f7
+SHA1: b4aac5a02507931a04d38546411b9cdc72c4cceb
+SHA256: ffb3483c6173b1460b94668da62a530ca93359ed474cb9a7558a38391dc615d6
+SHA512: b1e0d424a8c0147d23cfe9ef75db1f94437e9dd64e7034596463143a1f22652110fac78393064a9ff8cff7bd68c3da92397faebaa257977f736a575addf277fc
+Description: Site config: Demo
+
+Package: buendia-site-reference
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-reference_0.16+b1065_all.deb
+Size: 1828
+MD5sum: 37c0b78668541835f2deef8886fa6f1a
+SHA1: c91a60f65e7b21d9406888bf15192da33cdf3c6b
+SHA256: fd90206d076ad8cac20b6055941112b479acfa8ca8d17ab7f21a23807adf588e
+SHA512: 97f5086d13201a8bd8b42c0d8b1bc763f4958255d6a548741455dedfc499054f2a04e001e6f63f5e83b33608d7757a32dfc00af67ff0fcb016c97e99fff53591
+Description: Site config: Reference deployment
+
+Package: buendia-pkgserver
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: nginx, unzip, python, apt-utils
+Filename: unstable/buendia-pkgserver_0.16.2+b1118_all.deb
+Size: 8204
+MD5sum: a31a903cca3ad5bbeb2df42b960198a9
+SHA1: 44240adde26e6b2a575095aefc746c24e616b048
+SHA256: f3a0dbfc6c9fcb7a8b5d5f07f53512bbc4765a5b49853e1bd2a6426458c4cdbb
+SHA512: 38736778f6cdb2ea7e0b26f325ab92556221054932752b941164727856895356e4b054114af5cbd97fcb2d0d9692f517451aaac7f5c76dcf2fba88d4f93b24e4
+Description: Serves up Buendia .deb and .apk files
+
+Package: buendia-site-test
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-test_0.16+b1063_all.deb
+Size: 1766
+MD5sum: 423ff5485457c37cb0fcab9e37dd1269
+SHA1: e9f57a810aee04ad98b41220df004091056176c7
+SHA256: 56777601c1be9de88858b71069a362928e83e22b2802e2d2db52e88982c64139
+SHA512: ab20a4237943f572e432c479390b2a54605b06f625c127eb940c962ed82c8e8db7919202aa5f1ee41bf5a0c23a2c486959dfbadc18811dc08aa1bb57ad85a20d
+Description: Site config: Edison - Integration test
+
+Package: buendia-utils
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Depends: coreutils, cron-daemon, curl, perl
+Filename: unstable/buendia-utils_0.16+b1063_all.deb
+Size: 13858
+MD5sum: 37e47bd793161f758ae8e70eec492275
+SHA1: 36177b0de8627e0eb93069c57d483b7161b4b942
+SHA256: b5dd2bcf5b41bd16efe6b0cfdf2df0d09255574bcb2147269578af8232c6fbd5
+SHA512: 3390bb03789baaf533361c944104b7a9bc5290b38d8d1073fc9f1c040635847e0e00c061a90087169e450c76b5546779d7f7194cbae6b966d4154fc2caa5aa69
+Description: Utility scripts for Buendia
+
+Package: buendia-utils
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Depends: coreutils, cron-daemon, curl, perl
+Filename: unstable/buendia-utils_0.16.6+b1207_all.deb
+Size: 13870
+MD5sum: bf1e383b06254b08bdc437a3ecc73221
+SHA1: e10aebe203637c73f1b8c54245d0545c6f40fa8f
+SHA256: bcfaaf6e547162b313af501b199f9272581eb16a5d67d7c3c1baf75e2cec46e8
+SHA512: 408ec3ae0a250591d13259b533da0df52c725765fbf6918ff9450476d684f847c2465fc38f4dd72e221824730ae534ff372bbbade0bc3b84e79b4ade2fb0ff34
+Description: Utility scripts for Buendia
+
+Package: buendia-networking
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: cron-daemon, dnsmasq, hostapd, dhcpcd5, wpasupplicant
+Filename: unstable/buendia-networking_0.16+b1063_all.deb
+Size: 6670
+MD5sum: 255ffee0a4fca428dc440b1c331b514c
+SHA1: f0b3b740dd6acc4248410a2a5bcd7455e55a8978
+SHA256: 7d4f80a0b7b03829effea499e0167d450d9c93090cc0526077d67701e39cd61c
+SHA512: 78408974f8819bd81f39146b2b39de9f197456cecf1de38a2007b00151b97877465b8d1d557c0eab45caa7f2771c85e3309183c1c776a1cacf32a01a70627579
+Description: Wifi AP and DHCP/DNS service for Buendia
+
+Package: buendia-tomcat7
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
+Filename: unstable/buendia-tomcat7_0.16.6+b1207_all.deb
+Size: 5676
+MD5sum: 24204c7c0f1a58c45cdd15cfe998e9e7
+SHA1: 2e7a18c11fb561793e3cbba072155f8cf1ca5cff
+SHA256: bcb5e9ed3d515b0f4ce2e96779dfb18770635847ea1d6b8e2c69a40c27334571
+SHA512: 4bf735937682e19f74de36164feecef322bf9a58fbcbefe41c650148887e46b23f959904535d77d12b1f7a082cc4d7f42b547671709d4264eed95e884cfcd104
+Description: Tomcat 7 configured for Buendia
+
+Package: buendia-site-test-integration
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-test-integration_0.16.6+b1207_all.deb
+Size: 2276
+MD5sum: 38c1a0f93a4262b82a35da16c8f8632f
+SHA1: 258e38be9f58c6ff1070b2c58205f1070435879f
+SHA256: e7dbf8d47619756ea2483e48b8b4fd63bbd7713a26b3518be930c49516d2d37a
+SHA512: 4ee0825fb7ddf49eda0eebefda96dd81af56ba53fe79622dfacbae1cba8f0afb71cd96a8a24fa9b5fc4e8c3fc7860d2fc77cdd84e0c5cbd5ba8057c11d0905bf
+Description: Site config: Destructive integration testing
+
+Package: buendia-db
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-db-init (<=0.16+b1063) | buendia-db-init (>>0.16+b1063), buendia-db-migrate, buendia-utils
+Filename: unstable/buendia-db_0.16+b1063_all.deb
+Size: 1092
+MD5sum: 0d3d4e7c92cf78c223d80964819bdd88
+SHA1: f14f7b1c6cd0370bfdfe4e97ebfce1842f35e399
+SHA256: 6182cdfb3bbcb310340eab19d8fd5f928a31cab9eaa4d6267c342112c1c8b078
+SHA512: a80a97740b10e769d991575d75d01d6a08af3362b3a79a5163567bf6f65e59b0a63d9b19597456abd25e713dc3336d835749619adf40691853cafb0aae66c4bb
+Description: 0.16+b1063-compatible Buendia database state
+
+Package: buendia-site-integration
+Architecture: all
+Version: 0.13+b700
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-integration_0.13+b700_all.deb
+Size: 1966
+MD5sum: 5f2bcedb82772de8344f6263a35ea696
+SHA1: 9d3248602c6e5cc9fddd0ce9239e11f74c5effd9
+SHA256: 4e64ef7c0f2984a4528f8e8cc99c4edec82f4e0cd1be3fdd31e889c67ab57400
+SHA512: d25c72c147640b4c92b8fe65e3c463ea345b27e1e2da55d7252fd2fbbf55fef695046c49b6b985529e53b86031732d9bd54c3f05308c45767de7307fb5104962
+Description: Site config: Cloud - Integration test
+
+Package: buendia-site-msf-ks
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-ks_0.16+b1063_all.deb
+Size: 1734
+MD5sum: 534016e973f4d601a0caa3280cca9f25
+SHA1: c82d280a8cc3b58b5e99d0f00eae157df9a7ce9a
+SHA256: 9b20cabdb042e24ba2860dc2604b9413f30dc403e269d829fe166bea72962dfa
+SHA512: 501e7689e1ea732cbc9fa0b25cf39a23965026f4c133cd69891a97fad76df3dada5e9c11637d255c454881d242872b29f4d0c1c04f050ed05b639c9ce15f754c
+Description: Site config: MSF - Kissi EMC
+
+Package: buendia-tomcat7
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, openjdk-7-jre-headless, sysvinit-utils, tomcat7, tomcat7-admin
+Filename: unstable/buendia-tomcat7_0.16+b1065_all.deb
+Size: 5494
+MD5sum: 35f501e117033270f444aff9da2537fe
+SHA1: ee96e2c7c5f3b24be9c58574872957e552a5d9ea
+SHA256: 7d9d2ed4331bf86dfbc75ec6dfe4e72e4066775abe988b905801765386956e2f
+SHA512: 3b9844e0a66c4c67688e27aca5cb320ac4a6540ea15f7455d965d734fedf551450027657b4a1095374b92e800d4d21ff6763e5309b92233f067879a05b944e21
+Description: Tomcat 7 configured for Buendia
+
+Package: buendia-mysql
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, mysql-server, sysvinit-utils, unzip, zip
+Filename: unstable/buendia-mysql_0.16+b1065_all.deb
+Size: 4152
+MD5sum: 7006151a261c311684434343c45e6e94
+SHA1: 05fb95035e7981704fc3cf22c377c064c20089bc
+SHA256: f4c173598ec9d825ef447dcd588452b97ac4164913fd66fa4da8e0142bac11c6
+SHA512: 9ba7b20d82c8433efc5d4c95338570aaa4602d7de9c3008b5c2163272e21336b2d5a415140f9f827a5885caa580adf723a4c31eb6cd8dc63303f037e3e8e4546
+Description: MySQL server configured for Buendia
+
+Package: buendia-monitoring
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: cron-daemon
+Filename: unstable/buendia-monitoring_0.16+b1063_all.deb
+Size: 4496
+MD5sum: 1b6a3ebce115921fa022c53e9684f841
+SHA1: ae9ccf84df21e1c438cd007c2d203b7efdf2cd5d
+SHA256: a14b5401dafd64d9a7b26bd7d27a324044e915aa5b63059c790a67342bbaaad2
+SHA512: b372c5726a52fcdb2f02a2e3a8b11a6493786adf0aa6f67c8e8430ff8411324bd091940e37072f5f29be487aeaaa901cfa5ae80ca8479e900e5a5bf3a42628cf
+Description: Monitoring and log rotation for Buendia devices.
+
+Package: buendia-site-msf-chad-bokoro
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-msf-chad-bokoro_0.16.2+b1118_all.deb
+Size: 1764
+MD5sum: dec7ef3be569e386ce01a97902def4ad
+SHA1: c2a7a43ffa0060fa26ccd04007516045e67a21cc
+SHA256: 7b11dc60b50d0df26b9d6bd76a4bf0c0f20b2353d390b179db68d97c9592e806
+SHA512: ddcb057a7924e6bf98b313a55c3b4a28e5aaf2e0da9aae58292d13a4343289d880a10ffb3ef0ecbcb953e87647bdbeee0afe6e507ea276c701cf09a55c2d1884
+Description: Site config: MSF - Chad - Bokoro Nutrition Programme
+
+Package: buendia-openmrs
+Architecture: all
+Version: 0.16.3+b1154
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-tomcat7, buendia-mysql
+Filename: unstable/buendia-openmrs_0.16.3+b1154_all.deb
+Size: 36912862
+MD5sum: ac7b851311189ff0c901cbb352ebcb28
+SHA1: 3e2cd2f063b6fe74151615f562e1443ed7489fe3
+SHA256: 12f9740dbf839c18cc0655e3e4c6bf3ed32ed98ae1681b7bd53abaa49e8af8b0
+SHA512: 2b92ad8837d9f10470800f142771ae6ec928f49f8080845c292427b1610c70ebec6b3457554dca1c3731cfb9908ddfb5daa9771e3f8be70441d2999db8e5f499
+Description: OpenMRS configured for Buendia
+
+Package: buendia-ntpserver
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: ntp
+Filename: unstable/buendia-ntpserver_0.16+b1065_all.deb
+Size: 1854
+MD5sum: e7e76686974e2e0314649cee88a335d5
+SHA1: 561a512b9265f459e0d626aa111d30d173b97ca7
+SHA256: dfe4b32667ab071cca553e980be5ed7df65f4b783462f3ac68592a6456686b47
+SHA512: 08965d8711c96e891fe1e159f2ae4974b3fc65852ba948ef23b8deecea0553630a024e86e3339319d802aaa6a77a40edd2ef1ffdf7d5739fcee56abe47a871dd
+Description: NTP server configured for Buendia
+
+Package: buendia-db
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-db-init (<=0.16.6+b1207) | buendia-db-init (>>0.16.6+b1207), buendia-db-migrate, buendia-utils
+Filename: unstable/buendia-db_0.16.6+b1207_all.deb
+Size: 1094
+MD5sum: bdbf4a69812f9b98164deccfa5e8788c
+SHA1: 7f9b8716ecb5941d096c53274fc5a72e36319e6d
+SHA256: 222d37dcdfcb1927856890ce3548b82070ec5b0dc24fd006060d36241d1809ea
+SHA512: 7e1529e392b2973f1007e03a54d0d9025d88becde55bbd5ff3565f4092b9ad136c97028c43d8c40c3b152c73edc13c21578ffc1282a8ed2b42716e13743a8f03
+Description: 0.16.6+b1207-compatible Buendia database state
+
+Package: buendia-server
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-db (=0.16+b1063), buendia-monitoring, buendia-openmrs, cron-daemon, python-mysqldb
+Filename: unstable/buendia-server_0.16+b1063_all.deb
+Size: 4426330
+MD5sum: d52777fb6e483698017d9591995727d7
+SHA1: c965be291af724c3672a1d71218f8d5372be1ab4
+SHA256: 548041c66c62c75ed6a8ad51c0399387bea00cb0c652e4dc08a4b0d66cb9fcf3
+SHA512: 0ace07fe5cf0ec4c70d6d9ea3bf03d7304efc83d4ecfa2ce3a401d1224f9eb8840c51b511561b476af6a0e224b4b4e8372a255ee6b4530d8197441813d8732f5
+Description: Buendia API server (an OpenMRS module)
+
+Package: buendia-mysql
+Architecture: all
+Version: 0.16.2+b1114
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: buendia-monitoring, cron-daemon, mysql-server, sysvinit-utils, unzip, zip
+Filename: unstable/buendia-mysql_0.16.2+b1114_all.deb
+Size: 4146
+MD5sum: 28d8f73b8d945b68ff8cced9673da562
+SHA1: 969bf2cbd8be9ddd0868383209ed0d9513f0ef23
+SHA256: fca92c79d8efd9d392462ae1bc761848d8dcd0130a44946313a8f2ba3a5ef838
+SHA512: 565da1cdf28fcba800da45ecae2499b7bf17469e4b585987a2cb41ad5bfa3baad72ebfcb3eafbf714dafbcadf51a7d5b0f49c676f139e8c1ad2d1a10a8b39c8a
+Description: MySQL server configured for Buendia
+
+Package: buendia-monitoring
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils
+Depends: cron-daemon
+Filename: unstable/buendia-monitoring_0.16+b1065_all.deb
+Size: 4496
+MD5sum: 0618b25e7402a2cec06b127b0c1004e8
+SHA1: d08241c0391c4816e87d903c9400abdb7930eaa0
+SHA256: 169acc18bd0e1ab15bef31a859e00c1afe5126ed4d9e0d1579b3813f5050f2d6
+SHA512: bb22a034b98736933aa1bd629169355f8a0612eb864c25e0a8aa48f08dfe22e0411f9cdaab1f70dc6b042f226e3175a324879f44b21dd7bc27cfd91d16334fff
+Description: Monitoring and log rotation for Buendia devices.
+
+Package: buendia-site-dev
+Architecture: all
+Version: 0.16.2+b1118
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-dev_0.16.2+b1118_all.deb
+Size: 1784
+MD5sum: 300945859e0da53e6f7a66dfa67d1226
+SHA1: 4a7d476325e3f3e63208d4ba1b6dfb71d7a53701
+SHA256: 4ff495def3dc95f5bac144357241cb99fce2ad5d22037597a3d100b2e482411a
+SHA512: db66ee82cfcf3b9b53fddc759da4bbcbe41cd39290020c0a74913751e48ddb2aa11c9e0050097d06d490217cf104696faea27d074b683b12e5298b56b31ab651
+Description: Site config: Cloud - Development
+
+Package: buendia-site-demo
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-demo_0.16+b1065_all.deb
+Size: 1716
+MD5sum: ce7b773c7422e66709994dc051f073a7
+SHA1: ec825b5177331a0f183ad47104850496819aa2f2
+SHA256: 56b4d4597ab50ccdfa286ab5176a376299aeff0279a1bf43516d088f09e91357
+SHA512: 934dd36ee8c7014a65d3654be72f873cd05739c3b3189204ecc30fa162a14da2d55654730b8994ca584e34ddd8bd147e08a9b8286a3be9447a07bc743666bf3b
+Description: Site config: Demo
+
+Package: buendia-site-test
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-test_0.16+b1065_all.deb
+Size: 1768
+MD5sum: 116715b4619d22b1ca640578c7bcf440
+SHA1: 0dbb8b9081fea68e69f993b35610a496a28e0b36
+SHA256: 4352f5aa2fa4f31ddeb0b960201b59929c7f4710ea35d7a78cdc27707ba1c165
+SHA512: c4048aaa6f6581cb81241802bcb2689ee18325bea1f3ea7fef072a8302f92ecf617f4919b669e49394ec111ac06d3dfe88bea2fd2b2f1b5abd321aa47716b2de
+Description: Site config: Edison - Integration test
+
+Package: buendia-site-test-integration
+Architecture: all
+Version: 0.16+b1065
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Depends: buendia-dashboard, buendia-backup, buendia-monitoring, buendia-server
+Conflicts: buendia-site
+Filename: unstable/buendia-site-test-integration_0.16+b1065_all.deb
+Size: 2142
+MD5sum: 29327ea50d2cfe938c51773a3ff9f6c2
+SHA1: cd3e5561f776d744d060830d50afef5c26170143
+SHA256: 6308b716ae6589d0602e2e12335e2a99980dc87a980352a9f1d5dd344efba91f
+SHA512: 0a7d825a2d49bb6660b8e6452dcd02c117af694eeb6bcf6369ec31e4d50ffbdf7cd24d0f8a3a6a9a5d8f7e8a8b36a198dcd263da5b29c82e9d92357cdb5d172e
+Description: Site config: Destructive integration testing
+
+Package: buendia-dashboard
+Architecture: all
+Version: 0.16.6+b1207
+Maintainer: projectbuendia.org
+Pre-Depends: buendia-utils, buendia-server
+Depends: buendia-setclock, fcgiwrap, nginx-light, buendia-monitoring, apache2-utils
+Filename: unstable/buendia-dashboard_0.16.6+b1207_all.deb
+Size: 8664
+MD5sum: 66a683d858773eca7671be427b576745
+SHA1: 7f3ee98da1814eb039a7b80d5c6f5c0cb9e6a9af
+SHA256: a0feac4ec70a20cd3c3f064e6b0a879cdb71d1f6211a209eb64d18bba0edb153
+SHA512: e7e34089694258a2aaaeea91e5c773f0c43d3f62cc7eb9aba7adc5fe73ee416742570c3ffee18d27df692ce1a6835bfd88597a41f9281d8a35324e736ecad25e
+Description: Serves a system status and administration page for Buendia.
+
+Package: buendia-site-dev
+Architecture: all
+Version: 0.16+b1063
+Maintainer: projectbuendia.org
+Provides: buendia-site
+Pre-Depends: buendia-utils
+Conflicts: buendia-site
+Filename: unstable/buendia-site-dev_0.16+b1063_all.deb
+Size: 1776
+MD5sum: 5e07a2fa0d7a31603ea026745eac3912
+SHA1: 24d0a467a4f696401797ce45f29af0d78dec302a
+SHA256: 5e706e4e1ecf64ff93e2ec6290c4a862f6dd1726997d85b04109da21bcbebf09
+SHA512: 36e68860fc90469b78df46feacfd4e276081799bbf4b686344636be5d5d992e68464b39f260e812102bd97f4494d5bee9ee9a31748da3475a63a899ff613e4b3
+Description: Site config: Cloud - Development
 
