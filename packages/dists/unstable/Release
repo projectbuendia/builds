@@ -4,9 +4,9 @@ Architectures: all
 Components: main java
 Description: Buendia Debian Packages
 Suite: unstable
-Date: Sat, 03 Dec 2022 02:00:49 +0000
+Date: Sun, 04 Dec 2022 02:00:44 +0000
 MD5Sum:
- f69bc203045d5cff3acbaf393ba0190a              179 Release
+ 20bf217ecc9fb788732f7d5272ed81ff              179 Release
  9d7a571941789e89087533fa05f27b22             5972 java/binary-all/Packages
  306ed20c241d5e8645b7ef3bcb906dcb            13062 java/binary-amd64/Packages
  ec9fc3330ee088b2911125cb209ad326            13053 java/binary-i386/Packages
@@ -14,7 +14,7 @@ MD5Sum:
  de3d8bd40989c5f1075b820b7c2fb827            46539 main/binary-amd64/Packages
  de3d8bd40989c5f1075b820b7c2fb827            46539 main/binary-i386/Packages
 SHA1:
- fa70e63369b0e874365c4a1666d95369d3c07a19              179 Release
+ f797389137929d7f7be9ddf00d53a8898cfde4ac              179 Release
  89be397d062f1d6c3514e12401af5c657146706e             5972 java/binary-all/Packages
  fedd0505ca4afdcd9007ed50f0f335e5cbc75df6            13062 java/binary-amd64/Packages
  823216d312d2a16b00063a9f6630bbfb91205e7c            13053 java/binary-i386/Packages
@@ -22,7 +22,7 @@ SHA1:
  7cbc930429f63d66f87f6b34e1f1110fde4f8c40            46539 main/binary-amd64/Packages
  7cbc930429f63d66f87f6b34e1f1110fde4f8c40            46539 main/binary-i386/Packages
 SHA256:
- 4424bce0b833bc703dc78d20a479f87d05375ab803e9d3cd67d58218368c24be              179 Release
+ 1e98e8e081075bfb72fd519a401a0429854095b471c1a2c23ca56917d82a8fe8              179 Release
  6640a68694092038895cf9a634f04a49aaba0c11948a06abbd6ba77b2788a9b7             5972 java/binary-all/Packages
  b77a4b0dce17820c4c9cdd81c31a2a2c2725044c211e943242986b5387841833            13062 java/binary-amd64/Packages
  40b273b68f40fd0bff99822208ff4ba6186929cf3fe260baa87398d3fff2489f            13053 java/binary-i386/Packages
@@ -30,7 +30,7 @@ SHA256:
  fd650f496b087aab99618fe66f44f8ef39f0bd79292f2bb8b8166547bf5c6cb2            46539 main/binary-amd64/Packages
  fd650f496b087aab99618fe66f44f8ef39f0bd79292f2bb8b8166547bf5c6cb2            46539 main/binary-i386/Packages
 SHA512:
- d3ca24c01a9ad788c323ba4f73ccce22492d01f068a4b939a6f31a8cb72b503d872a74c394df1b72f850835fdc7d49bf2e1a52a0888cbe75f362b2031b8a7ed7              179 Release
+ 567c9bfd4797494c287d631681ad04558b5b7d7552d9820f47f544108d97a3ad399be821d97c53edfa49474ceab3e4134a1e7a008b213da296a735bf392c3611              179 Release
  b9435a7fd612e9442724246bcff47a4b3db2cf91bf9ea7adb0aa9b07ba380c32c92254929a522534dade17e01420c60c37af5b33cc8d5b1ed66dabf40ff78234             5972 java/binary-all/Packages
  bebed192c31b36f25ac146014eac1587e836ea32586d2e7d63549f617c3ba1dbbb7b7786926ee7b3b064f408286f9d393d4fee6a13d2becaef260f22d0fdc60a            13062 java/binary-amd64/Packages
  5bed4f9671080b11184e396d11521457854f9921dce9d76308b62a13d2aad6b732f736a916e53263c5759cb8e3dc3c7c9d3b7e853c6e96b71a782bb8cf97911d            13053 java/binary-i386/Packages
